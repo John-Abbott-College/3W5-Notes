@@ -4,10 +4,10 @@
 **JS Review, Functions, Objects**
 - [1 History, Review, Functions](/1_Review_history_JSInHTML_Functions.md)
 - [2 Arrays(intro), Objects](/2_ArraysIntro_Objects.md)
-- [3 Objects Labs and Exercises] (https://docs.google.com/presentation/d/13GkyS-qBpNBIwR-SnwIMQ6JFQkNSvVZa/edit?usp=sharing&ouid=109262363651926625965&rtpof=true&sd=true)
+- [3 Objects Labs and Exercises](https://docs.google.com/presentation/d/13GkyS-qBpNBIwR-SnwIMQ6JFQkNSvVZa/edit?usp=sharing&ouid=109262363651926625965&rtpof=true&sd=true)
 
 **Scope, let/var/const, equality**
-- [4 let,const/var, scope, hoisting] (https://docs.google.com/presentation/d/1REt8pPo-YwBJKPSv7jgEKdPLgbgJfZbPQN82rojQL2k/edit?usp=sharing)
+- [4 let,const/var, scope, hoisting](https://docs.google.com/presentation/d/1REt8pPo-YwBJKPSv7jgEKdPLgbgJfZbPQN82rojQL2k/edit?usp=sharing)
 
 
 
