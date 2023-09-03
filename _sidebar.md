@@ -8,6 +8,7 @@
 
 **Scope, let/var/const, equality**
 - [4 let,const/var, scope, hoisting](https://docs.google.com/presentation/d/1REt8pPo-YwBJKPSv7jgEKdPLgbgJfZbPQN82rojQL2k/edit?usp=sharing)
+- [5 equality, use strict, const](https://docs.google.com/presentation/d/1YchhgWUluwgK8ATOe6HGdVD9oXSZmBU9KV7bxeRJnEU/edit?usp=sharing)
 
 
 
