@@ -2,7 +2,7 @@ This lesson was based on the page [DOM tree](https://javascript.info/dom-nodes) 
 
 # The DOM
 
-Based on what we've learned so far, one might think that the browser reads the HTML we write and immediately renders it in the browser.
+One might think that the browser reads the HTML we write and immediately renders it in the browser.
 
 However, that is not a complete picture.
 
