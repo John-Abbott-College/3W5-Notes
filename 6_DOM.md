@@ -259,14 +259,23 @@ In the following example we will change the content  (the `innerHTML`) of the `<
 
 <br>
 
-<iframe height="333" style="width: 100%;" scrolling="no" title="wk11-DOM_JavaScript-ex1" src="https://codepen.io/maujac/embed/XWmMbGQ?height=333&theme-id=light&default-tab=html" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
-  See the Pen <a href='https://codepen.io/maujac/pen/XWmMbGQ'>wk11-DOM_JavaScript-ex1</a> by Mauricio Buschinelli
-  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+```html
+<body>
+  <h1 id="demo">Original text</h1>
+
+  <script>
+    let my_element = document.getElementById("demo");
+    my_element.innerHTML = "Changing the content";
+    
+  </script>
+
+</body>
+
+```
 
 <br>
 
-In this case, `getElementById` is a **method**, while `innerHTML` is a  **property** of the `<p>` element.
+In this case, `getElementById` is a **method** of the document object, while `innerHTML` is a  **property** of the `<p>` element.
 
 <br>
 
@@ -290,11 +299,11 @@ Let's look at some common DOM API methods available in the browser:
 
 The following methods belong to the Document object and can be used to select HTML elements on the page:
 
-| Method                                                       | Description                                               |
-| ------------------------------------------------------------ | --------------------------------------------------------- |
-| [document.getElementById(*id*)](https://www.w3schools.com/js/js_htmldom_elements.asp) | Returns **one** element by element id                     |
-| [document.getElementsByTagName(*name*)](https://www.w3schools.com/js/js_htmldom_elements.asp) | Returns an array with **multiple** elements by tag name   |
-| [document.getElementsByClassName(*name*)](https://www.w3schools.com/js/js_htmldom_elements.asp) | Returns an array with **multiple** elements by class name |
+| Method                                                       | Description                                                  |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [document.getElementById(*id*)](https://www.w3schools.com/js/js_htmldom_elements.asp) | Returns **one** element by element id. Returns null if no element with the given id is in the DOM. |
+| [document.getElementsByTagName(*name*)](https://www.w3schools.com/js/js_htmldom_elements.asp) | Returns an **array** with **multiple** elements by tag name. Returns an empty array if no elements with that tag are in the DOM. |
+| [document.getElementsByClassName(*name*)](https://www.w3schools.com/js/js_htmldom_elements.asp) | Returns an **array** with **multiple** elements by class name. Returns an empty array if no elements with that class are in the DOM. |
 
 
 
