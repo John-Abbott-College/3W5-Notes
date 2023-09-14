@@ -14,9 +14,9 @@
 - [6 DOM](/6_DOM.md)
 - [6a more coercion and scope examples](https://docs.google.com/presentation/d/15R8_Iidbfz-SKJVWsWYAMEIhPRHIC7VsogHmHYxAkWs/edit?usp=sharing)
 - [7 DOM manipulation](/7_DOM_manipulation.md)
-- [7a DOM InnerHTML/Text_Events](https://docs.google.com/presentation/d/1_1J7CZz-R2tzj0So-WYLbKgFG5zHYeSlhq2w3u9VIaA/edit?usp=sharing)
-- [8_DOM Events.md](/8_DOM Events.md)
-- [9_jquery, querySelectors, HTML Forms Validation](https://docs.google.com/presentation/d/1adyUJSoRmJoejrLj1unO6TboIHhUDpX89CLF99SBR0s/edit?usp=sharing)
+- [7a DOM, InnerHTML/Text, Events](https://docs.google.com/presentation/d/1_1J7CZz-R2tzj0So-WYLbKgFG5zHYeSlhq2w3u9VIaA/edit?usp=sharing)
+- [8 DOM, Events.md](/8_DOM_Events.md)
+- [9 jquery, querySelectors, HTML Forms Validation](https://docs.google.com/presentation/d/1adyUJSoRmJoejrLj1unO6TboIHhUDpX89CLF99SBR0s/edit?usp=sharing)
 - [10_DOM_manipulation_querySelectors.md](/10_DOM_manipulation_querySelectors.md)
 
 
