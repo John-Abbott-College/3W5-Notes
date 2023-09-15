@@ -18,6 +18,9 @@
 - [8 DOM, Events.md](/8_DOM_Events.md)
 - [9 jquery, querySelectors, HTML Forms Validation](https://docs.google.com/presentation/d/1adyUJSoRmJoejrLj1unO6TboIHhUDpX89CLF99SBR0s/edit?usp=sharing)
 - [10_DOM_manipulation_querySelectors.md](/10_DOM_manipulation_querySelectors.md)
+- [11 defer/asyc, DOMContentLoaded](https://docs.google.com/presentation/d/1C3G17EFGpD3eVgl040X7rDLOKTiWRarBicecfSHsnXg/edit?usp=sharing)
+- [12 Event Handling](/events.md)
+- [13 HTML Forms and validation](/forms.md) 
 
 
 
