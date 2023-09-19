@@ -32,9 +32,9 @@ Let's look at a basic `<form>`:
 
 A few notes about this form:
 
-- The `<form>` is a `block` level element, **however, it's items are `inline` elements.**
+- The `<form>` is a `block` level element, **however, its items are `inline` elements.**
 - The **labels must have the same name as their respective inputs**;
-- The `<form>` container and it's children can be styled as usual via CSS;
+- The `<form>` container and its children can be styled as usual via CSS;
 - Notice the `focus` "glow" when an `<input>`  is selected.
 
 <br>
