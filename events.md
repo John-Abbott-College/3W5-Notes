@@ -44,20 +44,8 @@ The event object is automatically passed to the callback function as the first a
 Note that:
 
 - The name of the "event argument" can be anything.  Common names are "event" or "e".
-- When assigning an event handler as HTML attributes, the event object must be included in attribute description and it must be named "event".
 
-
-
-<br>
-
-<iframe height="200" style="width: 100%;" scrolling="no" title="wk13 - events -  - ex5" src="https://codepen.io/maujac/embed/xxwpjze?height=265&theme-id=dark&default-tab=html" frameborder="no" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/maujac/pen/xxwpjze'>wk13 - events -  - ex5</a> by Mauricio Buschinelli
-  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
-
-
-
-<br>
+  
 
 ## Event Bubbling
 

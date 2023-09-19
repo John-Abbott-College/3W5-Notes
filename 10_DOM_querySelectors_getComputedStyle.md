@@ -267,67 +267,6 @@ let same_size = styles.getPropertyValue("font-size");
 
 
 
-## textContent vs innerText
-
-There are many ways of accessing the text content of an element node:
-
- 
-
-*element*.`textContent` 
-
-​		Returns the actual text inside the html file, regardless of styling (ex. display: none).
-
-
-
-*element.*`innerText` 
-
-​		Only returns the text that is displayed in the window. It considers modifications done via CSS.
-
-<br>
-
-The example below illustrates the difference between `textContent` vs `innerText`
-
-The `span` inside the `h1` is hidden with  `display: none`. Notice how the outputs of `innerText` and `textContent` will differ:
-
-<br>
-
-<iframe height="265" style="width: 100%;" scrolling="no" title="wk13 - DOM manipulation pt2 - ex1" src="https://codepen.io/maujac/embed/wvKPyvj?height=265&theme-id=light&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true" loading="lazy">
-  See the Pen <a href='https://codepen.io/maujac/pen/wvKPyvj'>wk13 - DOM manipulation pt2 - ex1</a> by Mauricio Buschinelli
-  (<a href='https://codepen.io/maujac'>@maujac</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
-
-
-<br>
-
-## nodeClone( ) Method
-
-It is possible to clone an existing node with all of its attributes and their values
-
-The syntax is as follows:
-
-<br>
-
-```javascript
-node.cloneNode(deep)
-```
-
-Where deep is a optional Boolean that specifies whether all descendants of the node should be cloned.
-
-- true - Clone the node, its attributes, *and* its descendants
-- false - Default. Clone only the node and its attributes
-
-<br>
-
-For more information [see cloneNode( ) documentation](https://www.w3schools.com/jsref/met_node_clonenode.asp)
-
-<br>
-
-> Note: If you will use cloneNode( ) to build your DOM, make sure that the element you are cloning is always available and part of the DOM
-
-
-
-<br>
-
 ## References
 
 **Recommended video**
