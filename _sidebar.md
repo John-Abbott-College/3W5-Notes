@@ -20,8 +20,7 @@
 - [10_DOM_querySelectors_getComputedStyle.md](/10_DOM_querySelectors_getComputedStyle.md)
 - [11 defer/async, DOMContentLoaded](https://docs.google.com/presentation/d/1C3G17EFGpD3eVgl040X7rDLOKTiWRarBicecfSHsnXg/edit?usp=sharing)
 
-
-** Form validation, Event bubbling
+**Form validation, Event bubbling, Arrow notation**
 - [12 Event Handling](/events.md)
 - [13 HTML Forms and validation](/forms.md)
 - [14 Arrow notation](https://docs.google.com/presentation/d/1HOq0xXdxuMEnkLCHmkoJXYZg1YXhF8k3sKw4GiCbgd0/edit?usp=sharing)
