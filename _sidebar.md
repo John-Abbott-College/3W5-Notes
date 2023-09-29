@@ -24,5 +24,6 @@
 - [12 HTML Forms and validation](/forms.md)
 - [13 Event Handling](/events.md)
 - [14 Arrow notation](https://docs.google.com/presentation/d/1HOq0xXdxuMEnkLCHmkoJXYZg1YXhF8k3sKw4GiCbgd0/edit?usp=sharing)
+- [15 Compiled/scripting, IntersectionObserverAPI](https://docs.google.com/presentation/d/1koS-3bClVXqKijnq4M-LuI-RMCBEnPe69xg6fGObEXk/edit?usp=sharing)
 
 
