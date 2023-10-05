@@ -31,7 +31,8 @@
 
 **Compiled/scripting, IntersectionObserverAPI, Node.js**
 - [15 Compiled/scripting, Lazy Loading](https://docs.google.com/presentation/d/1koS-3bClVXqKijnq4M-LuI-RMCBEnPe69xg6fGObEXk/edit?usp=sharing)
-  --END OF TEST 1 material--
+  
+  *END OF TEST 1 material*
 - [TEST 2: 16 IntersectionObserverAPI](https://docs.google.com/presentation/d/1F6bA0Qd-lYKjVYCv_bFT2tujPSfB7IGrw4o-gsBuriw/edit?usp=sharing)
 - [17 Node.js](https://docs.google.com/presentation/d/1iI64dRcXl6at9xXKdXb-iKRkrkefoj7Zayz109Urhzs/edit?usp=sharing)
 
