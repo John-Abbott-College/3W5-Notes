@@ -25,10 +25,11 @@
 - [13 Event Handling](/events.md)
 - [14 Arrow notation](https://docs.google.com/presentation/d/1HOq0xXdxuMEnkLCHmkoJXYZg1YXhF8k3sKw4GiCbgd0/edit?usp=sharing)
 
-**Test 1 Info, Assignment 1 common errors**
+**Test 1 Info, Assignment 1 common errors, Test Syntax Sheet, Test review game**
 - [Test 1 Info](https://docs.google.com/document/d/1jbW3E4-Jl9XL_ei3zQV5EoFI12FIbrlWlQJU16Lns8w/edit?usp=sharing)
 - [Assignment 1 Common errors](https://docs.google.com/document/d/1Y3zpYIHb3_6efEJIHIdjqCC9gHhpTyCJtSAsBxCyqdc/edit?usp=sharing)
 - [Test 1 Syntax (cheat) sheet (will be given to you with the programming part of test 1)](https://docs.google.com/document/d/1i8OwSnolf9KJe3G4W2raJmgDVWj_WtGQIR7pNNRli_k/edit?usp=sharing)
+- [Test 1 review game with answers](https://docs.google.com/presentation/d/1aGGAEPk-zfEB0nDxlNRyPYxpp_cFzA45JOke3dBzJIg/edit?usp=sharing)
 
 **Compiled/scripting, IntersectionObserverAPI, Node.js**
 - [15 Compiled/scripting, Lazy Loading](https://docs.google.com/presentation/d/1koS-3bClVXqKijnq4M-LuI-RMCBEnPe69xg6fGObEXk/edit?usp=sharing)
