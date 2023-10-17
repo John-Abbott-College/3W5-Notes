@@ -31,11 +31,13 @@
 - [Test 1 Syntax (cheat) sheet (will be given to you with the programming part of test 1)](https://docs.google.com/document/d/1i8OwSnolf9KJe3G4W2raJmgDVWj_WtGQIR7pNNRli_k/edit?usp=sharing)
 - [Test 1 review game with answers](https://docs.google.com/presentation/d/1aGGAEPk-zfEB0nDxlNRyPYxpp_cFzA45JOke3dBzJIg/edit?usp=sharing)
 
-**Compiled/scripting, IntersectionObserverAPI, Node.js**
+**Compiled/scripting, IntersectionObserverAPI, Node.js, Array Functions**
 - [15 Compiled/scripting, Lazy Loading](https://docs.google.com/presentation/d/1koS-3bClVXqKijnq4M-LuI-RMCBEnPe69xg6fGObEXk/edit?usp=sharing)
   
-  *END OF TEST 1 material*
+  
+  *----------END OF TEST 1 material----------*
 - [TEST 2: 16 IntersectionObserverAPI](https://docs.google.com/presentation/d/1F6bA0Qd-lYKjVYCv_bFT2tujPSfB7IGrw4o-gsBuriw/edit?usp=sharing)
 - [17 Node.js](https://docs.google.com/presentation/d/1iI64dRcXl6at9xXKdXb-iKRkrkefoj7Zayz109Urhzs/edit?usp=sharing)
+- [18 Array Functions](https://docs.google.com/presentation/d/1vzz5eO0tY6tOP9TyiQtcPitBnhSJ8MGAHsjPAdeBDr4/edit?usp=sharing)
 
 
