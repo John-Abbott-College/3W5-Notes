@@ -40,4 +40,7 @@
 - [17 Node.js](https://docs.google.com/presentation/d/1iI64dRcXl6at9xXKdXb-iKRkrkefoj7Zayz109Urhzs/edit?usp=sharing)
 - [18 Array Functions](https://docs.google.com/presentation/d/1vzz5eO0tY6tOP9TyiQtcPitBnhSJ8MGAHsjPAdeBDr4/edit?usp=sharing)
 
+**Lazy loading lab**
+- [Lazy loading lab](https://docs.google.com/document/d/1z_QmSIHYhIiM1sdqE8qGaIX4ut1lNuiX/edit?usp=sharing&ouid=109262363651926625965&rtpof=true&sd=true)
+
 
