@@ -39,8 +39,9 @@
 - [TEST 2: 16 IntersectionObserverAPI](https://docs.google.com/presentation/d/1F6bA0Qd-lYKjVYCv_bFT2tujPSfB7IGrw4o-gsBuriw/edit?usp=sharing)
 - [17 Node.js](https://docs.google.com/presentation/d/1iI64dRcXl6at9xXKdXb-iKRkrkefoj7Zayz109Urhzs/edit?usp=sharing)
 - [18 Array Functions](https://docs.google.com/presentation/d/1vzz5eO0tY6tOP9TyiQtcPitBnhSJ8MGAHsjPAdeBDr4/edit?usp=sharing)
+- [19 Lazy loading lab](https://docs.google.com/document/d/1z_QmSIHYhIiM1sdqE8qGaIX4ut1lNuiX/edit?usp=sharing&ouid=109262363651926625965&rtpof=true&sd=true)
 
-**Lazy loading lab**
-- [Lazy loading lab](https://docs.google.com/document/d/1z_QmSIHYhIiM1sdqE8qGaIX4ut1lNuiX/edit?usp=sharing&ouid=109262363651926625965&rtpof=true&sd=true)
+**AJAX, XMLHttpRequest, JSON, Fetch**
+- [20 AJAX, XMLHttpRequest, JSON](https://docs.google.com/presentation/d/10cHfFcCY7MCOXqYnjZVcUK3in2iBW5gsMk501dQ6Y2Y/edit?usp=sharing)
 
 
