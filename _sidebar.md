@@ -43,5 +43,6 @@
 
 **AJAX, XMLHttpRequest, JSON, Fetch**
 - [20 AJAX, XMLHttpRequest, JSON](https://docs.google.com/presentation/d/10cHfFcCY7MCOXqYnjZVcUK3in2iBW5gsMk501dQ6Y2Y/edit?usp=sharing)
+- [21 fetch and Promises](https://docs.google.com/presentation/d/15GKGWOa0iPHBGw9OFu65FV_Fs5OyrSlHqgfdjLaFRxU/edit?usp=sharing)
 
 
