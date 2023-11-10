@@ -41,8 +41,11 @@
 - [18 Array Functions](https://docs.google.com/presentation/d/1vzz5eO0tY6tOP9TyiQtcPitBnhSJ8MGAHsjPAdeBDr4/edit?usp=sharing)
 - [19 Lazy loading lab](https://docs.google.com/document/d/1z_QmSIHYhIiM1sdqE8qGaIX4ut1lNuiX/edit?usp=sharing&ouid=109262363651926625965&rtpof=true&sd=true)
 
-**AJAX, XMLHttpRequest, JSON, Fetch**
+**AJAX, XMLHttpRequest, JSON"
 - [20 AJAX, XMLHttpRequest, JSON](https://docs.google.com/presentation/d/10cHfFcCY7MCOXqYnjZVcUK3in2iBW5gsMk501dQ6Y2Y/edit?usp=sharing)
+- 
+**Fetch, Promises, Promise.all**
 - [21 fetch and Promises](https://docs.google.com/presentation/d/15GKGWOa0iPHBGw9OFu65FV_Fs5OyrSlHqgfdjLaFRxU/edit?usp=sharing)
+- [22 promise states, Promise.all](https://docs.google.com/presentation/d/1yHCdKgJT_EgF91L_e3Qqtq1Z-XkH4fw5qq67YRnCi6c/edit?usp=sharing)
 
 
