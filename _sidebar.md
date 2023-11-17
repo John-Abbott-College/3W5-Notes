@@ -45,7 +45,8 @@
 - [20 AJAX, XMLHttpRequest, JSON](https://docs.google.com/presentation/d/10cHfFcCY7MCOXqYnjZVcUK3in2iBW5gsMk501dQ6Y2Y/edit?usp=sharing)
 - 
 **Fetch, Promises, Promise.all**
-- [21 fetch and Promises](https://docs.google.com/presentation/d/15GKGWOa0iPHBGw9OFu65FV_Fs5OyrSlHqgfdjLaFRxU/edit?usp=sharing)
-- [22 promise states, Promise.all](https://docs.google.com/presentation/d/1yHCdKgJT_EgF91L_e3Qqtq1Z-XkH4fw5qq67YRnCi6c/edit?usp=sharing)
+- [21 fetch code and Promises](https://docs.google.com/presentation/d/15GKGWOa0iPHBGw9OFu65FV_Fs5OyrSlHqgfdjLaFRxU/edit?usp=sharing)
+- [22 fetch - the promises edition](https://docs.google.com/presentation/d/19S2F0JAMJlzP_qHubR8NeQHUIwSyTt8JdnOEGsRcmFc/edit?usp=sharing)
+- [23 promise states, Promise.all](https://docs.google.com/presentation/d/1yHCdKgJT_EgF91L_e3Qqtq1Z-XkH4fw5qq67YRnCi6c/edit?usp=sharing)
 
 
