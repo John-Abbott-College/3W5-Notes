@@ -31,12 +31,13 @@
 - [Test 1 Syntax (cheat) sheet (will be given to you with the programming part of test 1)](https://docs.google.com/document/d/1i8OwSnolf9KJe3G4W2raJmgDVWj_WtGQIR7pNNRli_k/edit?usp=sharing)
 - [Test 1 review game with answers](https://docs.google.com/presentation/d/1aGGAEPk-zfEB0nDxlNRyPYxpp_cFzA45JOke3dBzJIg/edit?usp=sharing)
 
-**Compiled/scripting, IntersectionObserverAPI, Node.js, Array Functions**
+**Compiled/scripting, Lazy Loading**
 - [15 Compiled/scripting, Lazy Loading](https://docs.google.com/presentation/d/1koS-3bClVXqKijnq4M-LuI-RMCBEnPe69xg6fGObEXk/edit?usp=sharing)
   
   
   **----------END OF TEST 1 material----------**
-
+  
+**IntersectionObserverAPI, Node.js, Array Functions**
 - [16 IntersectionObserverAPI](https://docs.google.com/presentation/d/1F6bA0Qd-lYKjVYCv_bFT2tujPSfB7IGrw4o-gsBuriw/edit?usp=sharing)
 - [17 Node.js](https://docs.google.com/presentation/d/1iI64dRcXl6at9xXKdXb-iKRkrkefoj7Zayz109Urhzs/edit?usp=sharing)
 - [18 Array Functions](https://docs.google.com/presentation/d/1vzz5eO0tY6tOP9TyiQtcPitBnhSJ8MGAHsjPAdeBDr4/edit?usp=sharing)
@@ -51,7 +52,7 @@
 - [23 promise states, Promise.all](https://docs.google.com/presentation/d/1yHCdKgJT_EgF91L_e3Qqtq1Z-XkH4fw5qq67YRnCi6c/edit?usp=sharing)
 - [24 minification](https://docs.google.com/presentation/d/1ePlMuWF5aMjrrjtk7WUYHr7b8GCkCjo9QxgrRpmT5mM/edit?usp=sharing)
   
-  *----------END OF TEST 2 material----------*
+  **----------END OF TEST 2 material----------**
   
 **Test 2**
 - [Test 2 Info](https://docs.google.com/document/d/1X-L92e_NUlTJFm483o37cNrd6wng6WJL0w2v-hZWj98/edit?usp=sharing)
