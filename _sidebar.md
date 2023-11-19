@@ -48,5 +48,11 @@
 - [21 fetch code and Promises](https://docs.google.com/presentation/d/15GKGWOa0iPHBGw9OFu65FV_Fs5OyrSlHqgfdjLaFRxU/edit?usp=sharing)
 - [22 fetch - the promises edition](https://docs.google.com/presentation/d/19S2F0JAMJlzP_qHubR8NeQHUIwSyTt8JdnOEGsRcmFc/edit?usp=sharing)
 - [23 promise states, Promise.all](https://docs.google.com/presentation/d/1yHCdKgJT_EgF91L_e3Qqtq1Z-XkH4fw5qq67YRnCi6c/edit?usp=sharing)
+- [24 minification](https://docs.google.com/presentation/d/1ePlMuWF5aMjrrjtk7WUYHr7b8GCkCjo9QxgrRpmT5mM/edit?usp=sharing)
+- 
+  *----------END OF TEST 2 material----------*
+  
+**Test 2**
+- [Test 2 Info](https://docs.google.com/document/d/1X-L92e_NUlTJFm483o37cNrd6wng6WJL0w2v-hZWj98/edit?usp=sharing)
 
 
