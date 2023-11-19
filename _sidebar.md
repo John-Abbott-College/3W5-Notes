@@ -35,21 +35,22 @@
 - [15 Compiled/scripting, Lazy Loading](https://docs.google.com/presentation/d/1koS-3bClVXqKijnq4M-LuI-RMCBEnPe69xg6fGObEXk/edit?usp=sharing)
   
   
-  *----------END OF TEST 1 material----------*
-- [TEST 2: 16 IntersectionObserverAPI](https://docs.google.com/presentation/d/1F6bA0Qd-lYKjVYCv_bFT2tujPSfB7IGrw4o-gsBuriw/edit?usp=sharing)
+  **----------END OF TEST 1 material----------**
+
+- [16 IntersectionObserverAPI](https://docs.google.com/presentation/d/1F6bA0Qd-lYKjVYCv_bFT2tujPSfB7IGrw4o-gsBuriw/edit?usp=sharing)
 - [17 Node.js](https://docs.google.com/presentation/d/1iI64dRcXl6at9xXKdXb-iKRkrkefoj7Zayz109Urhzs/edit?usp=sharing)
 - [18 Array Functions](https://docs.google.com/presentation/d/1vzz5eO0tY6tOP9TyiQtcPitBnhSJ8MGAHsjPAdeBDr4/edit?usp=sharing)
 - [19 Lazy loading lab](https://docs.google.com/document/d/1z_QmSIHYhIiM1sdqE8qGaIX4ut1lNuiX/edit?usp=sharing&ouid=109262363651926625965&rtpof=true&sd=true)
 
-**AJAX, XMLHttpRequest, JSON"
+**AJAX, XMLHttpRequest, JSON**
 - [20 AJAX, XMLHttpRequest, JSON](https://docs.google.com/presentation/d/10cHfFcCY7MCOXqYnjZVcUK3in2iBW5gsMk501dQ6Y2Y/edit?usp=sharing)
-- 
+  
 **Fetch, Promises, Promise.all**
 - [21 fetch code and Promises](https://docs.google.com/presentation/d/15GKGWOa0iPHBGw9OFu65FV_Fs5OyrSlHqgfdjLaFRxU/edit?usp=sharing)
 - [22 fetch - the promises edition](https://docs.google.com/presentation/d/19S2F0JAMJlzP_qHubR8NeQHUIwSyTt8JdnOEGsRcmFc/edit?usp=sharing)
 - [23 promise states, Promise.all](https://docs.google.com/presentation/d/1yHCdKgJT_EgF91L_e3Qqtq1Z-XkH4fw5qq67YRnCi6c/edit?usp=sharing)
 - [24 minification](https://docs.google.com/presentation/d/1ePlMuWF5aMjrrjtk7WUYHr7b8GCkCjo9QxgrRpmT5mM/edit?usp=sharing)
-- 
+  
   *----------END OF TEST 2 material----------*
   
 **Test 2**
