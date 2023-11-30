@@ -56,5 +56,7 @@
   
 **Test 2**
 - [Test 2 Info](https://docs.google.com/document/d/1X-L92e_NUlTJFm483o37cNrd6wng6WJL0w2v-hZWj98/edit?usp=sharing)
+- [Test 2 practice questions](https://docs.google.com/document/d/1ihjMBw4yEtIVjkmbsw5K4hAtlZsjwbnjx2f0Ed6TFME/edit?usp=sharing)
+  
 
 
