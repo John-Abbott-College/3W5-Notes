@@ -58,5 +58,8 @@
 - [Test 2 Info](https://docs.google.com/document/d/1X-L92e_NUlTJFm483o37cNrd6wng6WJL0w2v-hZWj98/edit?usp=sharing)
 - [Test 2 practice questions](https://docs.google.com/document/d/1ihjMBw4yEtIVjkmbsw5K4hAtlZsjwbnjx2f0Ed6TFME/edit?usp=sharing)
   
-
-
+**----------NOT ON TEST, Project----------**
+  
+**Async, Await, Classes**
+- [25 Async, Await](https://docs.google.com/presentation/d/17UXg_l7UxHxm5YqmEhXJJtxuyWafZlfYEnlOHC58bIw/edit?usp=sharing)
+- [26 Classes](https://docs.google.com/presentation/d/1GpB3fcH4Ae6kpBqfsZWZVlH16aSKOA6zCmMbWSR6jY0/edit?usp=sharing)
