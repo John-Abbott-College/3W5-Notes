@@ -58,6 +58,7 @@
 - [Test 2 Info](https://docs.google.com/document/d/1X-L92e_NUlTJFm483o37cNrd6wng6WJL0w2v-hZWj98/edit?usp=sharing)
 - [Test 2 practice questions](https://docs.google.com/document/d/1ihjMBw4yEtIVjkmbsw5K4hAtlZsjwbnjx2f0Ed6TFME/edit?usp=sharing)
 - [Test 2 syntax sheet (will be given to you for the whole test)](https://docs.google.com/document/d/1BwBgxU3wsioPxHeBTNRxAE39YlK9a6CWY7lDjgpwQjU/edit?usp=sharing)
+- [Test 2 info - practice questions with some answers and the Kahoot](https://docs.google.com/document/d/1kwHoanjW5bnwC2cEs8zxpRHLWP-EKhUC_FX6ddOnUek/edit?usp=sharing)
   
 **---NOT ON TEST, Project---**
   
