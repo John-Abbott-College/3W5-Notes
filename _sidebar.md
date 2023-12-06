@@ -59,6 +59,7 @@
 - [Test 2 practice questions](https://docs.google.com/document/d/1ihjMBw4yEtIVjkmbsw5K4hAtlZsjwbnjx2f0Ed6TFME/edit?usp=sharing)
 - [Test 2 syntax sheet (will be given to you for the whole test)](https://docs.google.com/document/d/1BwBgxU3wsioPxHeBTNRxAE39YlK9a6CWY7lDjgpwQjU/edit?usp=sharing)
 - [Test 2 practice questions with some answers and the Kahoot](https://docs.google.com/document/d/1kwHoanjW5bnwC2cEs8zxpRHLWP-EKhUC_FX6ddOnUek/edit?usp=sharing)
+- [Test 2 review game questions](https://docs.google.com/presentation/d/1FdqPtILjWY_v5yMk79Ay4e9FI1xRaWu4VvzHSgCimo4/edit?usp=sharing)
   
 **---NOT ON TEST, Project---**
   
