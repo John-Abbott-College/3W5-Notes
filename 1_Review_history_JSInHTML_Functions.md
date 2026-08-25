@@ -387,17 +387,3 @@ console.log(  myVariable + " " + myOtherVariable );
 
 
 
-
-### Answers - Exercises 
-
-1. nothing, the function is never called.
-
-2. first Hola will be logged. Then Hi will be logged from the execution of the test function. Then the console will show undefined, when it logs the return of the call to test. 
-
-   Hola
-
-   Hi
-
-   undefined
-
-   Remember, the lines of code in test will only be run when they are executed. Even if the test function is defined before the console.log("Hola"), console.log("Hola") is the first line of executed code. console.log("Hi") will only be run after, when test() is executed on the next line.
