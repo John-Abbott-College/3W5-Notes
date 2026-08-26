@@ -27,6 +27,10 @@ ECMA, a standards organization, developed ECMAScript as the standard for scripti
 It is the browser that loads HTML pages and builds up the DOM. It runs JavaScript code as it encounters it when it runs through the page it is loading.
 
 
+### Lab - ECMAScript latest version
+
+When was the latest version of JavaScript released? What is the official name of the version of the standard?
+
 
 ## Adding JavaScript in HTML
 
@@ -306,6 +310,7 @@ Major differences from other languages:
 #### JavaScript Reference Pages
 
 1. [**JavaScript reference**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference) by MDN web docs.
+2. Optional extra practice:  complete [this W3 schools quiz](https://www.w3schools.com/js/js_function_quiz.asp)  (check your answers at the end) 
 
    
 
@@ -315,9 +320,10 @@ Major differences from other languages:
 
 ## Hands-on 
 
-### Exercises (answers at the end of this page)
+### Exercises (answers will be adeded to the end of this page)
 
-1. What will be logged to console when a page is loaded with this code in a script tag?
+1. Do these quick W3 schools [JS Functions exercises] (https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_functions1)
+3. What will be logged to console when a page is loaded with this code in a script tag?
 
    ```javascript
    function test()
@@ -328,7 +334,7 @@ Major differences from other languages:
 
    <br>
 
-2. What will be logged to console when a page is loaded with this code in a script tag?
+4. What will be logged to console when a page is loaded with this code in a script tag?
 
    ```javascript
    function test()
@@ -345,12 +351,6 @@ Major differences from other languages:
    <br>
 
 <br>
-
-
-
-### Lab - ECMAScript latest version
-
-When was the latest version of JavaScript released? What is the official name of the version of the standard?
 
 
 
