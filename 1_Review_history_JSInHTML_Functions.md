@@ -242,11 +242,11 @@ console.log(a);		// undefined
 ```js
 // Declare two functions
 function sayHi(name){
-  console.log("Hi there ", name);		// Return nothing but print to console
+  console.log("Hi there " + name);		// Return nothing but print to console
 }
 
 function hiMessage(name){
-  return ("Hello my friend ", name);	// Returns a string
+  return ("Hello my friend " + name);	// Returns a string
 }
 
 // Now run them
