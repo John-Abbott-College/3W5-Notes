@@ -54,7 +54,7 @@ console.log(person);
 
 <br>
 
-If we return the person object and expand it's properties, we can clearly see the list of key-value pairs:
+If we return the person object and expand its properties, we can clearly see the list of key-value pairs:
 
 ![image-20200427211435669](assets/image-20200427211435669.png)
 
