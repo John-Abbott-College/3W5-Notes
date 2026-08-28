@@ -290,6 +290,6 @@ Add the following properties to each user:
 
 fill in the body of the canBuy method to achieve the following behaviour:
 
-- returns whether user can purchase the item. Note! Exclusive products can only be purchased by users if they are a premium user AND are either a "Gold" or "Silver" loyalty tier.
+- returns whether the user can purchase the item. Note! Exclusive products can only be purchased by users if they are a premium user AND are either a "Gold" or "Silver" loyalty tier.
 
 
