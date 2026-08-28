@@ -4,6 +4,6 @@
 **JS Review, Functions, Objects**
 - [1 History, Review, Functions](/1_Review_history_JSInHTML_Functions.md)
 - [2 Arrays(intro), Objects](/2_ArraysIntro_Objects.md)
-- [3 Arrays and equality](/3_arrays-and-equality.mdx)
-- [4_Functional JS, DOM](/4_functional-js-and-the-dom.mdx)
+- [3 Arrays and equality](/03_arrays-and-equality.mdx)
+- [4_Functional JS, DOM](/04_functional-js-and-the-dom.mdx)
 
