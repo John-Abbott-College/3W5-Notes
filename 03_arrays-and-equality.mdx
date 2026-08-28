@@ -152,54 +152,6 @@ const user = {
 };
 ```
 
-## Solution
-
-```js
-const user = {
-  name: "Arthur Dent",
-  cart: [
-    {
-      amount: 650,
-      item: "Laptop",
-    },
-    {
-      amount: 50,
-      item: "Mouse",
-    },
-    {
-      amount: 200,
-      item: "Monitor",
-    },
-  ],
-  isPremiumMember: true,
-  minimumAmountForDiscount: 500,
-
-  // Method 1 👉 determine eligibility for a discount
-  isEligibleForDiscount: function () {
-    let totalAmount = 0;
-
-    this.cart.forEach((item) => {
-      totalAmount += item.amount;
-    });
-
-    return totalAmount >= this.minimumAmountForDiscount || this.isPremiumMember;
-  },
-
-  // Method 2 👉 add a new item to the cart
-  addToCart: function (newItem) {
-    this.cart.push(newItem);
-  },
-
-  // Method 3 👉 remove an item from the cart
-  removeItemFromCart: function (index) {
-    if (index >= 0 && index < this.cart.length) {
-      this.cart.splice(index, 1);
-    }
-  },
-};
-```
-
-Food for thought: how do you think we could improve the above solution so that you remove an item from the cart based on the item's `barcode`? 👀
 
 # JavaScript Equality
 
@@ -431,21 +383,4 @@ and create methods that leverage these properties:
 
 - Method 1: a user should have access to exclusive product launches if they are a premium member AND are either a "Gold" or "Silver" loyalty tier.
 
-## Solution
 
-```js
-const user = {
-  // ... other stuff ... (refer to Exercise 1's solution) ...
-
-  // New property
-  loyaltyTier: "Gold",
-
-  // New Method
-  hasAccessToExclusiveLaunches: function () {
-    return this.isPremiumMember &&
-      (this.loyaltyTier === "Gold" || this.loyaltyTier === "Silver")
-      ? "Mark your calendars, there is an exclusive launch coming this friday"
-      : "What launch? How did you find this method? Go away";
-  },
-};
-```
