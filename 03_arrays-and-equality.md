@@ -71,7 +71,7 @@ Another could be managing a playlist where users might want to add, remove, or r
 
 # JavaScript Equality
 
-For everyone who watched the full conference video on [WTFJS](https://www.youtube.com/watch?v=et8xNAc2ic8), today we are going finally to explore why he referred to the `==` as the "dick".
+For everyone who watched the full conference video on [WTFJS](https://www.youtube.com/watch?v=et8xNAc2ic8), today we are going finally to explore why every ones hates the Javascript `==`.
 
 For starters, in JavaScript, shockingly `===` and `==` do not mean the same thing:
 
@@ -293,3 +293,26 @@ fill in the body of the canBuy method to achieve the following behaviour:
 - returns whether the user can purchase the item. Note! Exclusive products can only be purchased by users if they are a premium user AND are either a "Gold" or "Silver" loyalty tier.
 
 
+# Solution
+```js
+
+        let users = [{name:"tara", giftcardBalance: 123, loyaltyTier: "Gold", isPremium: true},
+                     {name:"bob", giftcardBalance: 123, loyaltyTier: "Bronze", isPremium: true}];
+        
+        let item = {name:"ball", isExclusive: false};
+        console.log( canBuy(users[0], item));
+
+        function canBuy( user, item){
+            if (item.isExclusive)
+            {
+                if ( (user.loyaltyTier === "Gold" || user.loyaltyTier === "Silver") 
+                     && user.isPremium )
+
+                    return true;
+                else
+                    return false;
+            }
+            else
+                return true;
+        }
+```
