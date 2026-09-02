@@ -158,6 +158,35 @@ In this version, the iterator (`forEach()`) and the action (adding to `total`) a
 
 However, this function still isn’t pure. Why? Because it modifies and depends on external state (e.g. `total`). To achieve purity, we need to avoid altering external state. We’ll cover this in more detail in week 10, where we’ll explore additional array methods like `map`, `filter`, and my favorite, `reduce`.
 
+## array filter function
+```js
+let numbers = [45, 4, 9, 16, 25];
+let over18 = numbers.filter( myFunction );
+function myFunction(value, index, array) {
+    return value > 18;
+}
+```
+
+### filter lab
+Create an array of the first 12 multiples of 3. 
+
+Filter out the array items that are multiples of 2.
+
+## array map function
+```js
+myArray.map()
+let newArray = myArray.map( function(x) {
+    return x += 2;
+} );
+```
+Applies the function on every element in the array.
+Returns a new array containing:
+ for each element in the original array, the value returned by applying the function to it. 
+ 
+map does not modify the original array
+
+map returns a new array with the same number of elements as the original array.
+
 
 # The DOM
 
