@@ -158,47 +158,6 @@ In this version, the iterator (`forEach()`) and the action (adding to `total`) a
 
 However, this function still isn’t pure. Why? Because it modifies and depends on external state (e.g. `total`). To achieve purity, we need to avoid altering external state. We’ll cover this in more detail in week 10, where we’ll explore additional array methods like `map`, `filter`, and my favorite, `reduce`.
 
-Why is this so cool? Just like building with Lego blocks, you can mix and match functions and iterators to create various structures. This modularity allows you to reuse and combine functions in different ways, enhancing your code’s maintainability and readability.
-
-## Example
-
-Imagine we have created the following "PURE" functions in one part of our codebase:
-
-```js
-// Function to log elements
-function logElement(element) {
-  console.log(element);
-}
-
-// Function to check if the element is even
-function checkEven(element) {
-  if (typeof element !== "number" || !Number.isInteger(element)) {
-    throw new Error("What are you doing giving me trash?");
-  }
-  const output = element % 2 === 0 ? element + " is even" : element + " is odd";
-  console.log(output);
-}
-```
-
-These functions can be used in various ways. For example, you can apply them to individual `number` elements:
-
-```js
-console.log(checkEven(42)); // 42 is even
-console.log(checkEven(13)); // 13 is odd
-console.log(checkEven("hello")); // trash
-console.log(checkEven(19.99)); // trash
-console.log(logElement(":^)")); // :^)
-```
-
-You can also integrate these functions directly into an array:
-
-```js
-const nums = [1, 2, 3, 4, 5];
-nums.forEach(checkEven);
-nums.forEach(logElement);
-```
-
-Since the action and iterator are decoupled, any changes made to the `checkEven` will automatically affect all parts of the codebase that use it. This modularity makes your code more maintainable :^)
 
 # The DOM
 
