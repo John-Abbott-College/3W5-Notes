@@ -1,14 +1,169 @@
----
-# General Information
-category: "Web Programming I"
-title: "Hoisting, Objects, and Scope"
-created: "2024-08-30"
-number: 5
----
 
-# Variable Declaration Continued
+# Variable Declaration
 
-In our last class, we explored the various ways to declare variables in JavaScript. The best practice is to use `const` by default, reserving `let` for cases where reassignment is necessary. While `var` can be useful when you need function-scoped variables, it is less common in modern JavaScript.
+`let`, `const`, and `var` are all used to declare variables. Whats the difference? They have different behaviors and scopes. Here’s a breakdown of the key differences:
+
+## Var
+
+`var` is function-scoped, meaning it is accessible within the function it is declared in. If declared outside a function, it is globally scoped.
+
+```js
+// a globally scoped variable
+var x = 42;
+function example() {
+  // a locally scoped variable
+  var y = 24;
+  console.log(x + " " + y); // 42 24
+}
+example();
+console.log(x + " " + y); // ReferenceError: y is not defined
+```
+
+Variables declared with `var` are hoisted to the top of their scope and initialized with `undefined`. This means you can reference the variable before its declaration, although it will be undefined until the declaration line is reached.
+
+```js
+var x = 42;
+function example() {
+  console.log(x + " " + y); // 42 undefined
+  var y = 24;
+  console.log(x + " " + y); // 42 24
+}
+example();
+```
+
+You can re-declare a variable using var without throwing an error.
+
+```js
+var x = 5;
+var x = 42; // No error
+console.log(b); // 42
+```
+
+## Let
+
+`let` is block-scoped, meaning it is only accessible within the block ({}) in which it is declared.
+
+```js
+// a globally scoped variable
+let x = 42;
+function example() {
+  // a locally scoped variable
+  let y = 24;
+  console.log(x + " " + y); // 42 24
+}
+example();
+console.log(x + " " + y); // ReferenceError: y is not defined
+```
+
+Unlike `var`, it is not initialized with `undefined`. If you try to access it before its declaration, you’ll get a `ReferenceError`.
+
+```js
+let x = 42;
+function example() {
+  console.log(x + " " + y); // ReferenceError: Cannot access 'y' before initialization
+  let y = 24;
+  console.log(x + " " + y);
+}
+example();
+```
+
+You cannot re-declare a variable with let in the same scope.
+
+```js
+let x = 5;
+let x = 42; // SyntaxError: Identifier 'x' has already been declared
+console.log(b); // 42
+```
+
+## Const
+
+`let` and `const` share many similar behaviors with respect to scope:
+
+```js
+// a globally scoped variable
+const x = 42;
+function example() {
+  // a locally scoped variable
+  const y = 24;
+  console.log(x + " " + y); // 42 24
+}
+example();
+console.log(x + " " + y); // ReferenceError: y is not defined
+```
+
+`const` behaves similarly to `let` if you try to access it before its declaration, you’ll also get a `ReferenceError`.
+
+```js
+const x = 42;
+function example() {
+  console.log(x + " " + y); // ReferenceError: Cannot access 'y' before initialization
+  const y = 24;
+  console.log(x + " " + y);
+}
+example();
+```
+
+`const` is used to declare constants, meaning the value assigned to a `const` variable cannot be reassigned.
+
+```js
+const x = 42;
+x = 24; // TypeError: Assignment to constant variable.
+```
+
+Unless of course the constant is an object or array, the properties or elements of that object or array can still be modified.
+
+```js
+const x = [];
+x.push(42, "beep", false, ["boop", [99]]); // shockingly, this is legal
+```
+
+You cannot re-declare a variable with `const` in the same scope.
+
+```js
+const x = [];
+const x = []; // SyntaxError: Identifier 'x' has already been declared.
+```
+
+## Why are there so many choices?
+
+Because JavaScript. All these options reflect the evolution of the language.
+
+## When do I use what?
+
+Best practice is to use `const` by default and `let` when you need to reassign. `var` tends to come in handy if you need function-scoped variables, though this is less common in modern JavaScript. Unfortunately, if you work with older software or legacy code developed over the past 30 years, you may still come across all these variable declaration options.
+
+# Exercise 1
+
+For the following Pen and Complete the following logic:
+
+- Create an adoption center name, this shouldn't change over the course of your program.
+- Initialize a variable to track the total number of cats adopted.
+- Implement a function that simulates the process of adopting a cat.
+
+```js
+const centerName = "Cute Cats Adoption Center";
+let adoptedCats = 0;
+
+function adoptCat() {
+  adoptedCats++;
+  console.log(`Total adopted cats: ${adoptedCats}`);
+}
+```
+
+# Exercise 2
+
+In this exercise, you'll manage a global array of cat names and use the `adoptCat()` function to randomly select a cat for adoption. This will help you understand variable scope and random selection in JavaScript.
+
+What you will need to randomly select a cat:
+
+```js
+Math.floor(Math.random() * arrayLength);
+```
+
+
+# Variable Declaration Lowdown
+
+The best practice is to use `const` by default, reserving `let` for cases where reassignment is necessary. While `var` can be useful when you need function-scoped variables, it is less common in modern JavaScript.
 
 ```js
 const x = "I am the best";
@@ -18,7 +173,7 @@ var z = "Why are you using me 👀";
 
 # Scope
 
-In our previous class, we discussed the difference between function scope and block scope. The lifetime of a JavaScript variable begins when it is declared. Local variables exist only within the function or block where they are defined and are removed when the function or block completes, meaning they are no longer accessible.
+The lifetime of a JavaScript variable begins when it is declared. Local variables exist only within the function or block where they are defined and are removed when the function or block completes, meaning they are no longer accessible.
 
 Understanding the scope of variables helps in managing and organizing code effectively, ensuring that variables are used correctly within their intended context.
 
@@ -237,26 +392,6 @@ Your object should include the following properties:
 - `price`: The price of the menu item
 - `ingredients`: An array of ingredients included in the menu item
 
-## Solution
-
-Here is an example of how you might structure the JavaScript Object:
-
-```js
-const breakfast = {
-  name: "The Lumberjack",
-  price: 9.95,
-  ingredients: ["eggs", "sausage", "toast", "hashbrowns", "pancakes"],
-};
-```
-
-Here is how you format the string so that it prints nicely:
-
-```js
-console.log(
-  `${breakfast.name} - $${breakfast.price} \n
-  ${breakfast.ingredients.toString()}`
-);
-```
 
 # Accessing properties from within an object
 
@@ -327,26 +462,4 @@ Additionally, the object should contain two functions:
 - `addFriend()` that increases the friend count by 1
 - `removeFriend()` that decreases the friend count by 1
 
-## Solution
 
-```js
-const instagramProfile = {
-  name: "Poggie",
-  friends: 80,
-  messages: [
-    "HELLO",
-    "Is this really what's popular these days?",
-    "I feel like a boomer",
-  ],
-
-  addFriend: function () {
-    this.friends++;
-  },
-
-  removeFriend: function () {
-    if (this.friends > 0) {
-      this.friends--;
-    }
-  },
-};
-```
