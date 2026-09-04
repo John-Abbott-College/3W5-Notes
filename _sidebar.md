@@ -6,4 +6,5 @@
 - [2 Arrays(intro), Objects](/2_ArraysIntro_Objects.md)
 - [3 Arrays and equality](/03_arrays-and-equality.md)
 - [4 Functional JS, DOM](/04_functional-js-and-the-dom.md)
+- [5 Variables, Scope, object access](/05-more-on-variable-declaration.md)
 
