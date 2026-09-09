@@ -121,7 +121,7 @@ Create a function to determine if a user is eligible for a discount based on the
 
 ## Part A - Object Spec
 
-Use an object to store the user's information, including their name, their postal code as a string, their cart, their membership status, and the minimum amount required for a discount. Their cart should be stored as an array of objects with the following properties:
+Use an object to store the user's information, including their name, their postal code as a string, their cart, their membership status. Their cart should be stored as an array of objects with the following properties:
 
 ```js
 {
@@ -132,11 +132,11 @@ Use an object to store the user's information, including their name, their posta
 
 ## Part B - Function Spec
 
-Create a function to check if the user is eligible for a discount. If the total amount of their cart meets or exceeds the minimum amount required and they are a premium member, they get a discount. Otherwise, they do not.
+Create a function to check if the user is eligible for a discount. If the total amount of their cart meets or exceeds 1000 they are a premium member, they get a discount. Otherwise, they do not.
 
 ## Part C - Inner Function 
 
-Change your function in part B to accept another object, a store object. That object is expected to have these properties:  a store name, a one letter string which is the postal code first letter the store sells to for free, an inner function that takes in a postal code as a string and returns whether the postal code starts with the store's free postal code letter. 
+Change your function in part B to accept another object, a store object. That object is expected to have these properties:  a store name, the minimum amount required for a discount at that store, a one letter string which is the postal code first letter the store sells to for free, an inner function that takes in a postal code as a string and returns whether the postal code starts with the store's free postal code letter. 
 
-Change your function in part B, to only give the premium discount for user's that are local to the passed in store.
+Change your function in part B, to only give the premium discount for user's whose carts meet or exceed the given store's minimum and that are local to the passed in store.
 
