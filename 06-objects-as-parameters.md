@@ -126,7 +126,7 @@ Use an object to store the user's information, including their name, their posta
 ```js
 {
     amount: 650,
-    item: "Laptop",
+    item: "Laptop"
 }
 ```
 
