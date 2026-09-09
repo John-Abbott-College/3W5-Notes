@@ -1,10 +1,3 @@
----
-# General Information
-category: "Web Programming I"
-title: "The DOM & Adding Elements"
-created: "2024-09-10"
-number: 9
----
 
 # Quick Recap
 
@@ -179,63 +172,6 @@ You're building yet another TODO list app. Given the HTML list below, your task 
 </html>
 ```
 
-## Solution
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TODO List</title>
-  </head>
-  <body>
-    <h1>To-Do List</h1>
-    <ul id="checkbox-list">
-      <li>
-        <input type="checkbox" />
-        <label>Go to Web 1</label>
-      </li>
-      <li>
-        <input type="checkbox" />
-        <label>Eat a Snack</label>
-      </li>
-      <li>
-        <input type="checkbox" />
-        <label>Exercise</label>
-      </li>
-      <li>
-        <input type="checkbox" />
-        <label>Sleep</label>
-      </li>
-    </ul>
-
-    <script>
-      // Items that should be pre-checked
-      const checkedItems = ["Exercise", "Go to Web 1"];
-
-      // Get the list of <li> elements
-      const checkboxList = document.getElementsByTagName("li");
-
-      // Step 1: Convert the list to an array
-      const boxes = Array.from(checkboxList);
-
-      // Step 2: Loop through each item and check the box if necessary
-      boxes.forEach(function (item) {
-        // Select the checkbox and label inside each <li>
-        const checkbox = item.querySelector("input");
-        const label = item.querySelector("label").textContent;
-
-        // Step 3) Check the box if the item is in the checkedItems array
-        if (checkedItems.includes(label)) {
-          checkbox.checked = true;
-        }
-      });
-    </script>
-  </body>
-</html>
-```
-
 # Adding HTML Elements
 
 There are several ways to add HTML elements dynamically in JavaScript.
@@ -308,25 +244,3 @@ Open up Chrome DevTools and add the following on `johnabbott.qc.ca`:
 - Add a fresh `<p>` element to the first heading
 - Append an `<h4>` element AFTER the first heading
 
-## Solution
-
-In the console, add the following JavaScript snippets:
-
-```js
-// first get the first heading
-const headings = document.getElementsByTagName("h1");
-
-// Step 1) Add a <p> to the first heading
-const newP = document.createElement("p");
-newP.textContent = "HELLO JAC";
-headings[0].appendChild(newP);
-
-// Step 2) Add a <h4> after the first heading
-headings[0].insertAdjacentHTML("afterend", "<h4>This is VALID????</h4>");
-```
-
-Food for thought, what other stuff do you think you could modify programmatically 👀
-
-# Friday
-
-Don't forget the quiz on friday which will focus on equality and the DOM.
