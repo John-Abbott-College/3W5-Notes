@@ -7,4 +7,5 @@
 - [3 Arrays and equality](/03_arrays-and-equality.md)
 - [4 Functional JS, DOM](/04_functional-js-and-the-dom.md)
 - [5 Variables, Scope, object access](/05-more-on-variable-declaration.md)
+- [6 Objects as parameters](/06-objects-as-parameters.md)
 
