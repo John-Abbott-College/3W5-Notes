@@ -132,7 +132,7 @@ Use an object to store the user's information, including their name, their posta
 
 ## Part B - Function Spec
 
-Create a function to check if the user is eligible for a discount. If the total amount of their cart meets or exceeds 1000 they are a premium member, they get a discount. Otherwise, they do not.
+Create a function to check if the user is eligible for a discount. If the total amount of their cart meets or exceeds 1000 and they are a premium member, they get a discount. Otherwise, they do not.
 
 ## Part C - Inner Function 
 
