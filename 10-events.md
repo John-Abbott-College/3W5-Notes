@@ -1,11 +1,3 @@
----
-# General Information
-category: "Web Programming I"
-title: "Events & Event Listeners & jQuery"
-created: "2024-09-13"
-number: 10
----
-
 # HTML Events
 
 HTML events can occur due to browser actions or user interactions. Here are a few common examples:
@@ -143,73 +135,12 @@ To improve code maintainability, you can define the image URLs as constants and 
 
 Create an event listener that displays an `alert` whenever a user clicks on a camera. Make sure the `alert` message reflects the correct cat name.
 
-## Solution
 
-```js
-const camera1 = document.getElementById("camera1");
-const camera2 = document.getElementById("camera2");
-const camera3 = document.getElementById("camera3");
-const camera4 = document.getElementById("camera4");
-
-function showAlert(catName) {
-  alert(`Sending a photo to ${catName}`);
-}
-
-camera1.addEventListener("click", () => showAlert("chonky_boi_420"));
-camera2.addEventListener("click", () => showAlert("sleepy_bean"));
-camera3.addEventListener("click", () => showAlert("yee-paw"));
-camera4.addEventListener("click", () => showAlert("fluffcrate_9000"));
-```
 
 # Exercise 2
 
 Set up an event listener to change the profile image when a user hovers over it. The image should revert to the original when the user moves the mouse away.
 
-## Solution
-
-```js
-const hoverImages = {
-  profile1:
-    "https://i.pinimg.com/originals/e8/66/95/e866952236eae173834989268c360194.jpg",
-  profile2:
-    "https://i.pinimg.com/originals/e8/66/95/e866952236eae173834989268c360194.jpg",
-  profile3:
-    "https://i.pinimg.com/originals/e8/66/95/e866952236eae173834989268c360194.jpg",
-  profile4:
-    "https://i.pinimg.com/originals/e8/66/95/e866952236eae173834989268c360194.jpg",
-};
-
-const originalImages = {
-  profile1: "./images/chonky-cat.jpeg",
-  profile2: "./images/sleepy-cat.png",
-  profile3: "./images/sad-cat.jpg",
-  profile4: "./images/box-cat.jpeg",
-};
-
-function handleMouseOver(element) {
-  const profileId = element.id;
-  element.src = hoverImages[profileId];
-}
-
-// Function to handle mouseleave event
-function handleMouseLeave(element) {
-  const profileId = element.id;
-  element.src = originalImages[profileId];
-}
-
-// Attach event listeners to each profile element
-profile1.addEventListener("mouseover", () => handleMouseOver(profile1));
-profile1.addEventListener("mouseleave", () => handleMouseLeave(profile1));
-
-profile2.addEventListener("mouseover", () => handleMouseOver(profile2));
-profile2.addEventListener("mouseleave", () => handleMouseLeave(profile2));
-
-profile3.addEventListener("mouseover", () => handleMouseOver(profile3));
-profile3.addEventListener("mouseleave", () => handleMouseLeave(profile3));
-
-profile4.addEventListener("mouseover", () => handleMouseOver(profile4));
-profile4.addEventListener("mouseleave", () => handleMouseLeave(profile4));
-```
 
 # Introduction to jQuery
 
