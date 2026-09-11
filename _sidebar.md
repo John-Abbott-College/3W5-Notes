@@ -9,3 +9,7 @@
 - [5 Variables, Scope, object access](/05-more-on-variable-declaration.md)
 - [6 Objects as parameters](/06-objects-as-parameters.md)
 
+**DOM manipulations, Events**
+- [7-DOM manipulations](/07-more-dom-properties.md)
+- [8-DOM events](/08-events.md)
+
