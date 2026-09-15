@@ -299,6 +299,6 @@ What does this look like in the HTML document?
 Open up Chrome DevTools and add, using the Console, the following on `johnabbott.qc.ca`:
 For a first heading, use the Latest News heading, using its div class.
 
-- Add a fresh `<p>` element to the div
+- Add a fresh `<p>` element to be the first thing in the div
 - Append an `<h4>` element AFTER the div
 
