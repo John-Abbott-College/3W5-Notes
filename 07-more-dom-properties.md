@@ -172,6 +172,63 @@ You're building yet another TODO list app. Given the HTML list below, your task 
 </html>
 ```
 
+# Solution
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO List</title>
+  </head>
+  <body>
+    <h1>To-Do List</h1>
+    <ul id="checkbox-list">
+      <li>
+        <input type="checkbox" />
+        <label>Go to Web 1</label>
+      </li>
+      <li>
+        <input type="checkbox" />
+        <label>Eat a Snack</label>
+      </li>
+      <li>
+        <input type="checkbox" />
+        <label>Exercise</label>
+      </li>
+      <li>
+        <input type="checkbox" />
+        <label>Sleep</label>
+      </li>
+    </ul>
+
+    <script>
+      // Items that should be pre-checked
+      const checkedItems = ["Exercise", "Go to Web 1"];
+
+      // Get the list of <li> elements
+      const checkboxList = document.getElementsByTagName("li");
+
+      // Step 1: Convert the list to an array
+      const boxes = Array.from(checkboxList);
+
+      // Step 2: Loop through each item and check the box if necessary
+      boxes.forEach(function (item) {
+        // Select the checkbox and label inside each <li>
+        const checkbox = item.querySelector("input");
+        const label = item.querySelector("label").textContent;
+
+        // Step 3) Check the box if the item is in the checkedItems array
+        if (checkedItems.includes(label)) {
+          checkbox.checked = true;
+        }
+      });
+    </script>
+  </body>
+```
+
+
 # Adding HTML Elements
 
 There are several ways to add HTML elements dynamically in JavaScript.
@@ -239,7 +296,8 @@ What does this look like in the HTML document?
 
 # Exercise 2
 
-Open up Chrome DevTools and add the following on `johnabbott.qc.ca`:
+Open up Chrome DevTools and add, using the Console, the following on `johnabbott.qc.ca`:
+For a first heading, use the Latest News heading, using its div class.
 
 - Add a fresh `<p>` element to the first heading
 - Append an `<h4>` element AFTER the first heading
