@@ -12,4 +12,6 @@
 **DOM manipulations, Events**
 - [7-DOM manipulations](/07-more-dom-properties.md)
 - [8-DOM events](/08-events.md)
+- [9-Arrow notation](/09-arrow-notation.md)
+- [10-JQuery](/10-jquery.md)
 
