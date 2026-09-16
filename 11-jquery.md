@@ -81,7 +81,45 @@ If you want to use the google hosted jQuery for whatever reason, that can be acc
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 ```
 
-# Recap on Syntax
+## How to Use jQuery?
+
+You’re probably familiar with methods like `getElementById()`, `getElementsByClassName()`, or `getElementsByTagName()`? If you open up Chrome DevTools in console, you will notice you have access to the `$` symbol. What is it? the `$` symbol represents jQuery and provides a simpler way to access elements:
+
+```js
+// 👉 Select elements with a class
+$(".someClass"); // better way
+document.getElementsByClassName("someClass"); // lame way
+
+// 👉 Select the element with an ID
+$("#myId"); // better way
+document.getElementById("myId"); // lame way
+
+// 👉 Select all <p> elements
+$("p"); // better way
+document.getElementsByTagName("p"); // lame way
+```
+
+## jQuery Selectors
+
+Once jQuery is included, you can use it as follows:
+
+```js
+$(selector).action();
+```
+
+Here’s what each part means:
+
+- `$` 👉 represents the jQuery function.
+- `selector` 👉 is a jQuery selector to target elements.
+- `action` 👉 is the action you want to perform.
+
+Common selectors include:
+
+```js
+$("tag"); // Selects elements by <tag>
+$(".class"); // Selects elements by css .class
+$("#id"); // Selects elements by "id"
+```
 
 With the mighty `$` symbol you are able to do a lot more with less.
 
@@ -255,91 +293,3 @@ Your end result should look something like [Universal Paperclips](https://www.de
 
 ![demo](./assets/3.png)
 
-## jQuery Solution
-
-```html
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Universal Paperclips</title>
-    <!-- NOTICE THE IMPORT -->
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  </head>
-  <body>
-    <h2 id="paperclip-count">Paperclips: 0</h2>
-    <button id="make-paperclip">Make Paperclip</button>
-    <script>
-      let paperclipCount = 0;
-
-      // Define paperclip making function
-      function makePaperclip() {
-        paperclipCount++;
-        $("#paperclip-count").text("Paperclips: " + paperclipCount);
-      }
-
-      // Event handler for button click
-      $("#make-paperclip").on("click", makePaperclip);
-    </script>
-  </body>
-</html>
-```
-
-## Pure JS Solution
-
-Without using jQuery, your solution might look something like this:
-
-```html
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Universal Paperclips</title>
-  </head>
-  <body>
-    <h2 id="paperclip-count">Paperclips: 0</h2>
-    <button id="make-paperclip">Make Paperclip</button>
-    <script>
-      let paperclipCount = 0;
-      const button = document.getElementById("make-paperclip");
-
-      // Define paperclip making function
-      function makePaperclip() {
-        paperclipCount++;
-        const count = document.getElementById("paperclip-count");
-        count.textContent = "Paperclips: " + paperclipCount;
-      }
-
-      // Event handler for button click
-      button.addEventListener("click", makePaperclip);
-    </script>
-  </body>
-</html>
-```
-
-## HTML Solution
-
-```html
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Universal Paperclips</title>
-  </head>
-  <body>
-    <h2 id="paperclip-count">Paperclips: 0</h2>
-    <button onclick="makePaperclip()">Make Paperclip</button>
-
-    <script>
-      let paperclipCount = 0;
-
-      // Define paperclip making function
-      function makePaperclip() {
-        paperclipCount++;
-        document.getElementById("paperclip-count").innerText =
-          "Paperclips: " + paperclipCount;
-      }
-    </script>
-  </body>
-</html>
-```
