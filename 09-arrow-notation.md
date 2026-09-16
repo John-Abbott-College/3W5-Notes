@@ -115,27 +115,6 @@ const add = function (a, b) {
 const add = (a, b) => a + b;
 ```
 
-## this binding
-
-Arrow functions do not have their own `this` context; instead, they inherit this from the surrounding code (lexical scope):
-
-```js
-// Trad JS
-function Student() {
-  this.age = 0;
-  setInterval(function () {
-    this.age++; // `this` doesn't refer to the Student
-  }, 1000);
-}
-
-// ES6 JS
-function Student() {
-  this.age = 0;
-  setInterval(() => {
-    this.age++; // `this` refers to the Student
-  }, 1000);
-}
-```
 
 ## Simplifies Callbacks
 
