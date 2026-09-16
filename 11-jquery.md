@@ -1,11 +1,3 @@
----
-# General Information
-category: "Web Programming I"
-title: "jQuery & Event Listeners"
-created: "2024-09-15"
-coverSrc: "./assets/6.png"
-number: 11
----
 
 # Why do i need to learn this?
 
