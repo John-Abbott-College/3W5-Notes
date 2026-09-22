@@ -16,3 +16,5 @@
 - [9-Arrow notation](/09-arrow-notation.md)
 - [10-JQuery](/10-jquery.md)
 
+- [11-Interpreted vs Compiled](/11-interpretedvscompiled.md)
+
