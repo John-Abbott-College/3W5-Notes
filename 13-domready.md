@@ -1,19 +1,3 @@
----
-# General Information
-category: "Web Programming I"
-title: "DOMReady Form Validation"
-created: "2024-09-20"
-number: 13
-coverSrc: "./assets/1.png"
----
-
-# Mastering jQuery Motivation
-
-By the end of today's class, you will have the essential tools to understand how [this guy's code](https://levels.io/hoodmaps/) works.
-
-What make's "this guy" so special? He created a mini startup while streaming it on [Twitch](https://www.youtube.com/watch?v=FN144KdOIGM), starting from the very first line of code and transforming it into a fully functioning web app that has attracted over 300,000 users.
-
-If you're curious, you can explore all his other projects on his [Twitter](https://x.com/levelsio).
 
 # event.preventDefault()
 
@@ -208,67 +192,7 @@ Head over to [Omnivox](https://johnabbott.omnivox.ca/Login/Account/Login?ReturnU
 - A _Student ID_ field
 - A _Password_ field
 
-If you want to include more in your work, go for it :)
 
-## Solution
-
-To start, copy and paste the styles directly from Omnivox:
-
-```css
-.warning {
-  color: #f44336;
-  font-size: 0.8rem;
-  display: none;
-}
-```
-
-Your HTML should close to the following:
-
-```html
-<form id="loginForm">
-  <div>
-    <label for="studentId">Student ID:</label>
-    <input type="text" id="studentId" placeholder="Enter Student ID" />
-    <span class="warning" id="idError"
-      >The 'Student ID' field is required.</span
-    >
-  </div>
-  <div>
-    <label for="password">Password:</label>
-    <input type="password" id="password" placeholder="Enter Password" />
-    <span class="warning" id="passwordError"
-      >The 'Password' field is required.</span
-    >
-  </div>
-  <input type="submit" value="Login" />
-</form>
-```
-
-And finally add the JavaScript code:
-
-```js
-// before running any code, the DOM needs to be ready
-$(document).ready(function () {
-  // listen for a submit event on the login form
-  $("#loginForm").on("submit", function (event) {
-    // prevent default behavior
-    event.preventDefault();
-
-    // Get the values from the form fields
-    var studentId = $("#studentId").val();
-    var password = $("#password").val();
-
-    // error showing
-    if (!studentId) {
-      $("#idError").show();
-    }
-
-    if (!password) {
-      $("#passwordError").show();
-    }
-  });
-});
-```
 
 # The Load Event
 
@@ -339,27 +263,6 @@ Working independently, use the `load` event to manipulate elements after all res
 - Inside the file, set up a basic structure with a heading and an image with the following url `https://via.placeholder.com/150`
 - Use the load event to change the heading and image once everything on the page has fully loaded.
 
-## Solution
-
-```html
-<h1 id="pageHeading">Loading...</h1>
-<img
-  id="exampleImage"
-  src="https://via.placeholder.com/150"
-  alt="Placeholder Image"
-/>
-
-<script>
-  // Use the load event to change the heading text
-  $(window).on("load", function () {
-    $("#pageHeading").text("Wow this has finally loaded!");
-    $("#exampleImage").attr(
-      "src",
-      "https://upload.wikimedia.org/wikipedia/en/3/3d/Longcat_is_loooooooooong.jpg"
-    );
-  });
-</script>
-```
 
 # Official Documentation
 
