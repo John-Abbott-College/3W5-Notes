@@ -1,10 +1,3 @@
----
-# General Information
-category: "Web Programming I"
-title: "Form Validation"
-created: "2024-09-17"
-number: 12
----
 
 # Forms
 
@@ -63,7 +56,7 @@ Forms consist of three key components:
 
 So, what do "GET" and "POST" actually mean? For now, here’s the basic idea:
 
-- "GET" retries data
+- "GET" retrieves data
 - "POST" sends data
 
 Think of it like mailing a letter:
@@ -308,55 +301,4 @@ Take the above example and change it such that:
 </script>
 ```
 
-## Solution
 
-The form should look something close to this
-
-```html
-<form id="myForm" action="submit-form.php" target="_blank" method="post">
-  <div>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" placeholder="your@email.ca" />
-    <p id="emailWarningMessage" class="warning">Email field cannot be empty.</p>
-  </div>
-  <div>
-    <label for="terms">
-      <input type="checkbox" id="terms" name="terms" />
-      Accept terms of service
-    </label>
-    <p id="termsWarningMessage" class="warning">
-      You must accept the terms of service.
-    </p>
-  </div>
-  <input type="submit" value="Submit" />
-</form>
-```
-
-And the script could be close to this:
-
-```js
-function handleSubmit(event) {
-  // Declare important constants
-  const email = document.getElementById("email").value;
-  // or ... const email = $('#email').val();
-
-  const terms = document.getElementById("terms").checked;
-  // or ... $('#terms').is(':checked');
-
-  // Check if the email field is empty
-  if (email === "") {
-    $("#emailWarningMessage").show();
-  }
-
-  // Check if terms are accepted
-  if (!terms) {
-    $("#termsWarningMessage").show();
-  }
-}
-
-document.getElementById("myForm").addEventListener("submit", handleSubmit);
-```
-
-# Friday Quiz
-
-Go over the notes for Event Listeners and jQuery, this will be the focus for the Quiz this week.
