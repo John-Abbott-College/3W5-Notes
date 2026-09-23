@@ -1,4 +1,6 @@
 
+# DOM Readiness
+
 # event.preventDefault()
 
 The `event.preventDefault()` method in JavaScript is used to stop the default action associated with an event from occurring.
@@ -7,13 +9,13 @@ The `event.preventDefault()` method in JavaScript is used to stop the default ac
 
 When you submit a form or click a button with `type="submit"`, the browser's default behavior is to reload the page and send the form data to the server. This "default" behavior stems from the traditional use of forms for server-side processing, whereas we often want to handle form submissions client-side with JavaScript.
 
-![demo](./assets/3.png)
+![demo](./assets/3DOM.png)
 
 ## Why Do I Need This for Submit Events?
 
 If your goal is to manage the form data with JavaScript to create custom error messages or perform validation, ou must prevent the default form submission behavior. This is why using `event.preventDefault()` in form submission handlers is necessary.
 
-![demo](./assets/1.png)
+![demo](./assets/1DOM.png)
 
 ## What about onSubmit="" ?
 
@@ -24,13 +26,13 @@ The onSubmit event handler can be written in two common ways to prevent a form f
 
 Returning `false` from an `onSubmit` event handler is an _older_ approach that implicitly prevents the default action of the event, just like `event.preventDefault()`.
 
-![demo](./assets/2.png)
+![demo](./assets/2DOM.png)
 
 ## Why Do I Not Need This for Click Events?
 
 When using an `onclick` event on a button, the browser does not trigger ANY default behavior like page reload or data submission. Instead, the code within your `onclick` event runs directly, without needing to prevent anything.
 
-![demo](./assets/4.png)
+![demo](./assets/4DOM.png)
 
 ## Summary
 
@@ -242,7 +244,7 @@ The `window` object represents the entire browser `window`, including all conten
 
 The `document` object, on the other hand, refers solely to the HTML document. It doesn't need to wait for external resources, which is why the `DOMContentLoaded` event is tied to `document`. It fires as soon as the DOM is ready.
 
-![demo](./assets/image.png)
+![demo](./assets/imageDOM.png)
 
 ## When to use what
 
