@@ -16,5 +16,8 @@
 - [9-Arrow notation](/09-arrow-notation.md)
 - [10-JQuery](/10-jquery.md)
 
+**Form validation, scripting/compiled languages, DOM readiness
 - [11-Interpreted vs Compiled](/11-interpretedvscompiled.md)
+- [12-Form validation](/12-form-validation.md)
+- [13-DOM Ready](/13-domready.md)
 
