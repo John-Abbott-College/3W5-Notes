@@ -220,7 +220,7 @@ Despite being the default option, how many of you encountered this specific erro
 
 ## Option 2 - An Inline Event Listener
 
-If i wanted a more custom & modern error message, I would need to use an event listener. To start, I would need to include `onsubmit="return submitForm()"` to add the inline event listener:
+If I wanted a more custom & modern error message, I would need to use an event listener. To start, I would need to include `onsubmit="return submitForm()"` to add the inline event listener:
 
 ```html
 <form
@@ -273,7 +273,7 @@ const form = document.getElementsByTagName("form")[0];
 form.addEventListener("submit", handleSubmit);
 ```
 
-Whatever that's written in vanilla JS can be done cleaner with jQuery. However before we explore the best way of doing this form submission, we need to first understand what "DOM Safety" is. But that's Friday's problem.
+Whatever that's written in vanilla JS can be done cleaner with jQuery. However before we explore the best way of doing this form submission, we need to first understand what "DOM Safety" is. More on that next class!
 
 # Exercise 1
 
