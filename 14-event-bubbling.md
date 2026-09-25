@@ -1,11 +1,3 @@
----
-# General Information
-category: "Web Programming I"
-title: "Event Bubbling && Minification"
-created: "2024-09-22"
-number: 14
-coverSrc: "./assets/4.png"
----
 
 # Introduction
 
@@ -68,7 +60,7 @@ Wait ok, what's happening here? We just clicked the `.three` div, but the consol
 
 If we check the Elements tab in Chrome DevTools, we’ll see that clicking the `three` div, we also clicked on `two`, which is inside `one`, which is in the `body`, then `html`, and all the way up to Chrome itself.
 
-![demo](./assets/1.png)
+![demo](./assets/1bubbling.png)
 
 It’s like we keep zooming out layer by layer. This is the core idea of "bubbling."
 
@@ -76,7 +68,7 @@ It’s like we keep zooming out layer by layer. This is the core idea of "bubbli
 
 When you click an element, the event "bubbles" up through its parent elements. The browser not only identifies the element you clicked on but also triggers click events for every parent element up the DOM tree.
 
-![butterfly](./assets/4.png)
+![butterfly](./assets/4bubbling.png)
 
 Think of this as A "butterfly effect" in the DOM.
 
@@ -103,11 +95,11 @@ In this case, the event will propagate all the way up the document, triggering `
 
 Modern browsers handle this process by first "capturing" events. When you click on an element, the browser starts from the top of the DOM tree, moving downward, temporarily capturing events without firing them yet.
 
-![demo](./assets/5.png)
+![demo](./assets/5bubbling.png)
 
 The browser is trying to figure out exactly what you clicked. Once it determines the target, it triggers events from the bottom up.
 
-![demo](./assets/3.png)
+![demo](./assets/3bubbling.png)
 
 ## What triggers the event?
 
@@ -179,7 +171,7 @@ The `DOMContentLoaded` event ensures that the entire DOM is fully constructed an
 
 For event bubbling to work, the DOM structure MUST be fully loaded. The `DOMContentLoaded` event guarantees that all elements are available and accessible. . If you try to attach event listeners before this event, they won't work because the elements you're trying to bind them to might not exist yet.
 
-![demo](./assets/6.png)
+![demo](./assets/6bubbling.png)
 
 In other words, if the DOM hasn't loaded, there are no elements (no `event.target`) for your event listeners to attach to, which would stop "bubbling" from happening.
 
@@ -265,44 +257,6 @@ Hint: Use this css property to delay the changing of the background:
 
 ```js
 div.style.transition = "background-color 4s";
-```
-
-## Solution (HTML)
-
-```html
-<div class="one">
-  <div class="two">
-    <div class="three">
-      <img id="butterfly" alt="butterfly" src="some-url.com" />
-    </div>
-  </div>
-</div>
-```
-
-## Solution (Vanilla JS)
-
-Using vanilla JS with detailed comments, this would be the solution:
-
-```js
-const butterfly = document.getElementById("butterfly");
-const divs = document.querySelectorAll("div");
-
-// listen for DOMReady
-document.addEventListener("DOMContentLoaded", function () {
-  // Listen for click on butterfly
-  butterfly.addEventListener("click", function () {
-    console.log("wow you clicked me");
-  });
-
-  // now propagate that event to the parents
-  divs.forEach(function (div) {
-    div.addEventListener("click", function () {
-      console.log(this.classList.value);
-      div.style.transition = "background-color 4s";
-      div.style.backgroundColor = `blue`;
-    });
-  });
-});
 ```
 
 This code demonstrates two key concepts in JavaScript: event handling and event bubbling.
