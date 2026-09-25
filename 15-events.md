@@ -212,14 +212,10 @@ Strict mode is ignored by older browsers, such as Internet Explorer. However, if
 
 # Exercise (Group Competition)
 
-Get together in groups of up to 4 people and if you prefer to work independently, that's ok too.
-
 ## The Task
 
-Write the worst JavaScript code you can possibly think of that still compiles. Refer to the [official documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode) for inspiration.
+In groups, write the worst JavaScript code you can possibly think of that still compiles. Refer to the [official documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode) for inspiration.
 
 Compare your results before and after applying strict mode. What is the worst piece of trash you can create that only gets flagged as an error when applying `"use strict";`?
 
-## Submission
-
-Please send me a message in MIO containing your code and the names of your group members after class. The ugliest piece of code will win a prize on Friday.
+The ugliest piece of code will win a prize on Friday.
