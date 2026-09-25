@@ -175,25 +175,11 @@ Wrapping your jQuery code in `$(document).ready()` is important to ensure that t
 - If your script runs before the DOM is fully loaded, it won't find the elements (like `#myForm`) because they haven't been created yet. Without `$(document).ready()`, trying to attach event handlers or perform actions on those elements MAY fail.
 - It’s a best practice in jQuery to use `$(document).ready()` to avoid potential problems, especially in larger applications where scripts might be placed in various locations. While things may seem simpler now, unpredictable behavior WILL lead to painful midnight debugging sessions in larger projects.
 
-Think of this as like DOM consent. You can only access the DOM when it is ready, and the DOM communicates it's consent is through the `DOMContentLoaded` event.
+Think of this as like DOM consent. You can only access the DOM when it is ready, and the DOM communicates its consent is through the `DOMContentLoaded` event.
 
-## Can we use this same concept for Images?
+## Can we use this same concept for knowing when the images are all visible?
 
-No lol.
-
-When we need to add an event listener to an image instead of a form, we may encounter different scenarios and for this I need to introduce another event.
-
-# Exercise 1
-
-Form a group of up to three people, but if you prefer to work independently, that's fine too.
-
-## The Task
-
-Head over to [Omnivox](https://johnabbott.omnivox.ca/Login/Account/Login?ReturnUrl=%2fintr%2f) and try to replicate the form submission behavior using jQuery. Your form should include:
-
-- A _Student ID_ field
-- A _Password_ field
-
+No. When we need to add an event listener to an image instead of a form, we may encounter different scenarios and for this I need to introduce another event.
 
 
 # The Load Event
