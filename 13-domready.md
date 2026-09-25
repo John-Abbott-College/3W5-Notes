@@ -241,9 +241,10 @@ The `document` object, on the other hand, refers solely to the HTML document. It
 
 So, we have different events to remember, but what makes the `load` event remarkable? The `load` event is closely related to lazy loading, as both concepts aim to improve page performance and user experience by managing how resources are loaded. We will explore this in more detail next week. For now, let’s get familiar with the syntax through the following exercise:
 
-# Exercise 2
+# Exercise
 
-Working independently, use the `load` event to manipulate elements after all resources are fully loaded using jQuery.
+Recreate the Omnivox login page with a form using jQuery. Ensure that your DOM is ready before attaching the event listener.
+Working independently, use the `load` event to manipulate elements after all resources are fully loaded.
 
 ## The Task
 
