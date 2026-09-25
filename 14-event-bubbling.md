@@ -70,7 +70,7 @@ When you click an element, the event "bubbles" up through its parent elements. T
 
 ![butterfly](./assets/4bubbling.png)
 
-Think of this as A "butterfly effect" in the DOM.
+Think of this as a "butterfly effect" in the DOM.
 
 # Example continued...
 
