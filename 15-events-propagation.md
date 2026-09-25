@@ -19,7 +19,7 @@ This is exactly when the DOM first knows the exact target.
 
 Once the event has been captured and we reach the _target_ element, it activates that element's event handler know that we know the target of the event.
 
-![tree](./assets/image.png)
+![tree](./assets/image_events.png)
 
 After executing the handler on the _target_ element, the event "bubbles" up to its parent element, then to the grandparent, and so on, until it reaches the root of the DOM. This allows parent elements to also respond to events that happen on their children and becomes particularly evident when we have nested event handlers.
 
