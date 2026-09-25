@@ -74,7 +74,7 @@ Think of this as a "butterfly effect" in the DOM.
 
 # Example continued...
 
-To further illustrate this concept, lets say we add an event listener of `click` to the body. What do you think will happen?
+To further illustrate this concept, let's say we add an event listener of `click` to the body. What do you think will happen?
 
 ```js
 document.body.addEventListener("click", logClass);
