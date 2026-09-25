@@ -56,7 +56,7 @@ Strict mode is ignored by older browsers, such as Internet Explorer. However, if
 
 # Exercise (Group Competition)
 
-Get together in groups of up to 4 people.
+Get together in groups of up to 3 people.
 
 ## The Task
 
