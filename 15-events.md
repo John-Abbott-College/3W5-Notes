@@ -1,11 +1,3 @@
----
-# General Information
-category: "Web Programming I"
-title: "Event Objects && Strict Mode"
-created: "2024-09-24"
-number: 15
-coverSrc: "./assets/handle.png"
----
 
 # Event Recap
 
