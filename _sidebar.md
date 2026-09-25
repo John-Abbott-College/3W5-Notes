@@ -20,4 +20,6 @@
 - [11-Interpreted vs Compiled](/11-interpretedvscompiled.md)
 - [12-Form validation](/12-form-validation.md)
 - [13-DOM Ready](/13-domready.md)
+- [14-Event Bubbling](/14-event-bubbling.md)
+- [16-use strict](/16-use-strict.md)
 
