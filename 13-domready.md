@@ -13,7 +13,7 @@ When you submit a form or click a button with `type="submit"`, the browser's def
 
 ## Why Do I Need This for Submit Events?
 
-If your goal is to manage the form data with JavaScript to create custom error messages or perform validation, ou must prevent the default form submission behavior. This is why using `event.preventDefault()` in form submission handlers is necessary.
+If your goal is to manage the form data with JavaScript to create custom error messages or perform validation, you must prevent the default form submission behavior. This is why using `event.preventDefault()` in form submission handlers is necessary.
 
 ![demo](./assets/1DOM.png)
 
