@@ -241,12 +241,40 @@ The `document` object, on the other hand, refers solely to the HTML document. It
 
 So, we have different events to remember, but what makes the `load` event remarkable? The `load` event is closely related to lazy loading, as both concepts aim to improve page performance and user experience by managing how resources are loaded. We will explore this in more detail next week. For now, let’s get familiar with the syntax through the following exercise:
 
-# Exercise
+# Exercise 1 - DOMContentLoaded
 
-Recreate the Omnivox login page with a form using jQuery. Ensure that your DOM is ready before attaching the event listener.
-Working independently, use the `load` event to manipulate elements after all resources are fully loaded.
+Use the following code to see how the DOMContentLoaded event can be used to make sure that elements re only accessed when the DOM is ready.
 
-## The Task
+Before loading the code in a browser, guess the order of the console log messages you will see.
+Load the page in a browser and check the Console to make sure you are right.
+
+```js
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Timing</title>
+</head>
+<body>
+    <script>
+        console.log(" 1- The JavaScript is running");
+
+        document.addEventListener("DOMContentLoaded", function () {
+                console.log( " 2- DOMContentLoaded was fired");
+                console.log( " 3- Button is: " + document.querySelector("#myButton")
+            );
+        });
+
+        console.log( " 4- Button is: " + document.querySelector("#myButton") );
+
+    </script>
+
+    <h1>DOM Timing Demo</h1>
+    <button id="myButton">Click Me</button>
+</body>
+</html>
+```
+
+# Exercise 2 - load
 
 - Create a single HTML file.
 - Inside the file, set up a basic structure with a heading and an image with the following url `https://via.placeholder.com/150`
