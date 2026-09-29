@@ -3,7 +3,15 @@
 
 We've been exploring Event Listeners and various types of events for a little while now. Today, we are going to make these concepts clearer
 
-The focus of today’s class will be on event propagation, bubbling, and capturing. What are all these spooky terms? It's best explained with an example.
+The focus of today’s class will be on event propagation, bubbling, and capturing. What are all these spooky terms? 
+
+When you click an element (like a <button>) nested inside other elements, the browser executes event propagation in three distinct, sequential phases:
+
+1	Capturing Phase, 	Top → Down,	The event starts at the window and document root and moves downward through the ancestors toward the target element.
+2	Target Phase,	At the Target, 	The event reaches the actual, innermost element that triggered the action (e.g., the specific button you clicked).
+3	Bubbling Phase,	Bottom → Up	The event "bubbles" back up from the target element, traveling through its parents and ancestors all the way back to the root.
+
+Here is an example to help explain.
 
 # Event Bubbling Example
 
@@ -107,6 +115,8 @@ Your "click" action, however more precisely, the `target`.
 
 In JavaScript, `event.target` refers to the element that triggered the event. When an event occurs (like a click), the browser creates an event object that contains various properties and methods to provide information about the event.
 
+
+
 ## How can we prevent this?
 
 If you want to prevent this bubbling behavior, you can modify the `addEventListener` method as follows:
@@ -169,7 +179,7 @@ The `DOMContentLoaded` event ensures that the entire DOM is fully constructed an
 
 ## Why is this important for Event Bubbling?
 
-For event bubbling to work, the DOM structure MUST be fully loaded. The `DOMContentLoaded` event guarantees that all elements are available and accessible. . If you try to attach event listeners before this event, they won't work because the elements you're trying to bind them to might not exist yet.
+For event bubbling to work, the DOM structure MUST be fully loaded. The `DOMContentLoaded` event guarantees that all elements are available and accessible. If you try to attach event listeners before this event, they won't work because the elements you're trying to bind them to might not exist yet.
 
 ![demo](./assets/6bubbling.png)
 
@@ -195,7 +205,7 @@ divs.forEach(function (div) {
 });
 ```
 
-Here we are risking unpredictable behavior. Ff the DOM isn't loaded yet, no event listeners will be attached and In larger code bases this would be bad practice.
+Here we are risking unpredictable behavior. If the DOM isn't loaded yet, no event listeners will be attached and In larger code bases this would be bad practice.
 
 ## Safe Example (Vanilla JS)
 
@@ -265,54 +275,6 @@ This code demonstrates two key concepts in JavaScript: event handling and event 
 
 - Event Bubbling: After setting up the click event for the butterfly, the code adds click event listeners to all div elements on the page. When any div is clicked, it changes its background color to blue with a lovely transition.
 
-# Minification
-
-## What is it?
-
-Minification is the process of removing unnecessary characters from code, like spaces, line breaks, and comments. It can even include shortening variable names. The key is that it doesn't change how the code works; it simply makes the file smaller.
-
-## Who uses it?
-
-Minification is a common practice in web development. It's used to reduce the size of files like JavaScript, CSS, and HTML, helping websites run more efficiently.
-
-## Real World Example
-
-Check out all the jQuery releases [here](https://releases.jquery.com/jquery/). You'll notice that each version includes a minified option.
-
-## Why use it?
-
-- Improved Performance 👉 Smaller files mean faster downloads, leading to quicker page loads.
-- Reduced Bandwidth Usage 👉 Minified files use less bandwidth, which is great when you're dealing with bad wifi connections.
-
-## How it works
-
-Here's an example of a typical JavaScript file before minification:
-
-```js
-function greetUser(name) {
-  console.log("Hello, " + name + "!");
-}
-
-greetUser("Poggie");
-```
-
-Minification usually removes things like:
-
-- whitespace
-- variable names
-- comments
-
-After minification, the file might look like this:
-
-```text
-function greetUser(n){console.log("Hello, "+n+"!")}greetUser("Poggie");
-```
-
-If you run this in the Chrome DevTools console, you'll see it works exactly the same.
-
-## How to avoid manually minifying
-
-To automate the minification process in VSCode, you can install the [Minify](https://marketplace.visualstudio.com/items?itemName=HookyQR.minify) extension. Once installed, you can minify a file by opening the command palette and typing `Minify`.
 
 # Exercise 2
 
