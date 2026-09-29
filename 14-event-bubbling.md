@@ -261,12 +261,15 @@ As projects grow, the DOM structure becomes more complex and loading times can v
 
 ## The Task
 
-Today, you will recreate the butterfly effect. Using the current example, place a butterfly image in the center div. When a user clicks on the butterfly, the outer divs will gradually change their color.
+Today, you will recreate the butterfly effect. Using the current example, place [this](https://johnabbott-my.sharepoint.com/:i:/g/personal/helen_katalifos_johnabbott_qc_ca/IQDZAKPXhO9lT5v19EQ75m7nAW9E3IR3nnkpBRdLa8UAYp4?e=btyQ50) butterfly image in the center div. When a user clicks on the butterfly, the outer divs will gradually change their color.
 
 Hint: Use this css property to delay the changing of the background:
 
 ```js
 div.style.transition = "background-color 4s";
+
+<style> .one { height: 500px; padding: 30px; background-color: lightgray; } .two { height: 350px; padding: 30px; background-color: lightgreen; } .three { height: 200px; padding: 30px; background-color: lightyellow; }
+
 ```
 
 This code demonstrates two key concepts in JavaScript: event handling and event bubbling.
@@ -276,6 +279,3 @@ This code demonstrates two key concepts in JavaScript: event handling and event 
 - Event Bubbling: After setting up the click event for the butterfly, the code adds click event listeners to all div elements on the page. When any div is clicked, it changes its background color to blue with a lovely transition.
 
 
-# Exercise 2
-
-Try to minify your assignment 1. What happens?
