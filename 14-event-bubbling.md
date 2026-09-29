@@ -7,9 +7,11 @@ The focus of today’s class will be on event propagation, bubbling, and capturi
 
 When you click an element (like a <button>) nested inside other elements, the browser executes event propagation in three distinct, sequential phases:
 
-1	Capturing Phase, 	Top → Down,	The event starts at the window and document root and moves downward through the ancestors toward the target element.
-2	Target Phase,	At the Target, 	The event reaches the actual, innermost element that triggered the action (e.g., the specific button you clicked).
-3	Bubbling Phase,	Bottom → Up	The event "bubbles" back up from the target element, traveling through its parents and ancestors all the way back to the root.
+Capturing Phase, 	Top → Down,	The event starts at the window and document root and moves downward through the ancestors toward the target element.
+
+Target Phase,	At the Target, 	The event reaches the actual, innermost element that triggered the action (e.g., the specific button you clicked).
+
+Bubbling Phase,	Bottom → Up	The event "bubbles" back up from the target element, traveling through its parents and ancestors all the way back to the root.
 
 Here is an example to help explain.
 
