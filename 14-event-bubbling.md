@@ -5,7 +5,7 @@ We've been exploring Event Listeners and various types of events for a little wh
 
 The focus of today’s class will be on event propagation, bubbling, and capturing. What are all these spooky terms? 
 
-When you click an element (like a <button>) nested inside other elements, the browser executes event propagation in three distinct, sequential phases:
+When you click an element (like a button) nested inside other elements, the browser executes event propagation in three distinct, sequential phases:
 
 Capturing Phase, 	Top → Down,	The event starts at the window and document root and moves downward through the ancestors toward the target element.
 
