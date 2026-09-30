@@ -22,4 +22,5 @@
 - [13-DOM Ready](/13-domready.md)
 - [14-Event Bubbling](/14-event-bubbling.md)
 - [16-use strict](/16-use-strict.md)
+- [17-minification](17-minification.md)
 
