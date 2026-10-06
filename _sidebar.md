@@ -25,3 +25,5 @@
 - [16-use strict](/16-use-strict.md)
 - [17-minification](17-minification.md)
 
+=============================end of material for test 1 ========================
+- [Test 1 Info](Test1_info.md)
