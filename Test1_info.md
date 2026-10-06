@@ -206,6 +206,10 @@
   * Run with pre-compiled machine-readable code vs run on the fly.  
     * C\# vs JavaScript  
     * If there are errors in your code when would you see them
+   
+* Minification
+
+  * What does it do, why is it useful
 
   
 
