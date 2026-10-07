@@ -12,7 +12,7 @@ Learning Node.js is one of the most valuable skills for any full-stack web devel
 
 Node.js is not a programming language; rather, it is a runtime that allows you to write JavaScript on a server. When JavaScript first emerged in the 1990s, it was designed exclusively for the browser as a simple scripting language.
 
-![node](./assets/cover.png)
+![node](./assets/nodecover.png)
 
 In 2009, Node.js was released, transforming the web development landscape by enabling programmers to use just one language, JavaScript, to build full-stack applications.
 
@@ -22,13 +22,13 @@ TLDR: It allows you to run JavaScript on the server side.
 
 While you don't need to know the technical details as a beginner, it's important to know that Node.js runs the V8 JavaScript engine outside the browser environment.
 
-![demo](./assets/1.png)
+![demo](./assets/node1.png)
 
 ## How does it work?
 
 When you visit a URL that points to your server running Node.js, the server receives the request. Using Node.js, we can handle this request, read files from the server's file system, generate an HTML file, and perform various operations before sending the response back to the client.
 
-![demo](./assets/2.png)
+![demo](./assets/node2.png)
 
 ## What can Node.js do?
 
