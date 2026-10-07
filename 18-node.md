@@ -1,30 +1,3 @@
----
-# General Information
-category: "Web Programming I"
-title: "Node.js"
-created: "2024-09-28"
-number: 16
-coverSrc: "./assets/cover.png"
----
-
-# Course updates
-
-Test 1 is scheduled for _October 11_, and _Assignment 2_ is due that same evening.
-
-## Assignment 2
-
-This assignment is designed to help you practice all the concepts we've covered in class up to this point. Completing it will ensure you are well-prepared for the programming part of the test.
-
-IMO, the best way to learn how to code is to build something meaningful from scratch. Part of today's class will be dedicated to getting a head start on the project.
-
-## Test 1
-
-The test will encompass all the material from Assignments 1 and 2, as well as the theory covered in the quizzes leading up to the test.
-
-## Contest Winners
-
-TBD
-
 # Introduction
 
 Node.js is an open-source, cross-platform JavaScript runtime environment that enables the execution of JavaScript code outside a web browser.
@@ -75,22 +48,6 @@ node -v
 
 This command will display your Node.js version in the console. If you encounter an error at this point, it indicates that Node.js is not installed.
 
-## nvm
-
-we will set up Node Version Manager (`nvm`) to manage different Node.js versions easily. Even if you already have Node.js installed, knowing how to use NVM is helpful, especially for switching between versions, which is common in the industry.
-
-Follow the instructions for your system here:
-
-- MacOS / Linux: [nvm-sh](https://github.com/nvm-sh/nvm)
-- Windows: [nvm-windows](https://github.com/coreybutler/nvm-windows)
-
-To verify your installation, open up a new terminal and run the following command:
-
-```bash
-nvm -v
-```
-
-Once installed, we can start having fun :^)
 
 # REPL Mode
 
@@ -177,7 +134,7 @@ It contains metadata about the project and its dependencies, making it easier to
 
 ## Real World Example
 
-Let's say I put my project up on git, well now when i pass it to a friend or colleague, they know what exactly all my code depends on. If you are curious, you can see all my project dependencies for this website on my [github repo](https://github.com/elizabeth-poggie/elizabeth-poggie/blob/main/package.json)
+Let's say I put my project up on git, well now when i pass it to a friend or colleague, they know what exactly all my code depends on. 
 
 Imagine you wanted to steal all my public code and create a website for yourself using my template. Do you want to individually install every single one of these packages manually?
 
