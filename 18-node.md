@@ -48,6 +48,11 @@ node -v
 
 This command will display your Node.js version in the console. If you encounter an error at this point, it indicates that Node.js is not installed.
 
+Path envirnoment variables to add:
+%USERPROFILE%\AppData\Roaming\npm
+%USERPROFILE%\AppData\Roaming\npm\node_modules\http-server
+
+
 
 # REPL Mode
 
