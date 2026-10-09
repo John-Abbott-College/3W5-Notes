@@ -27,6 +27,7 @@
 
 =============================end of material for test 1 ========================
 - [Test 1 Info](Test1_info.md)
+- [Test 1 Syntax sheet](https://johnabbott-my.sharepoint.com/:b:/g/personal/helen_katalifos_johnabbott_qc_ca/IQDt8wn4R3tdSKisJodnrz2wAY2N4sUMALY8ugt95iAebto?e=4mLaky)
 
 **Node.js**
 - [18-Node.js](18-node.md)
