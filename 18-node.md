@@ -144,15 +144,19 @@ what do all these things mean? Let's get into it.
 
 It contains metadata about the project and its dependencies, making it easier to manage and share the project with others.
 
-## Real World Example
+## Practical Example
 
-Let's say I put my project up on git, well now when i pass it to a friend or colleague, they know what exactly all my code depends on. 
+I put my project up on Git. I pass pass it to a friend or colleague. With the package.json they know exactly what my code depends on. 
 
 Imagine you wanted to steal all my public code and create a website for yourself using my template. Do you want to individually install every single one of these packages manually?
 
 Absolutely not.
 
-When we steal code we want to do it as efficiently and lazy as possible.
+When we steal code we want to do it as efficiently and lazily as possible.
+
+Does it make sense for every project that uses a popular library to have it committed in GitHub?
+
+Absolutely not.  We can each use npm to get the package when we need it instead. 
 
 ## Installing ALL dependencies
 
