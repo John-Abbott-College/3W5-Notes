@@ -48,11 +48,18 @@ node -v
 
 This command will display your Node.js version in the console. If you encounter an error at this point, it indicates that Node.js is not installed.
 
-Path envirnoment variables to add:
+Edit the environment variables for your account (not the system ones). Add two new entried to the Path environment variable:
+
+```bash
 %USERPROFILE%\AppData\Roaming\npm
+
 %USERPROFILE%\AppData\Roaming\npm\node_modules\http-server
+```
 
-
+In order to get rid of the error about npm not loading, in Powershell, run the following:
+```bash
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
 
 # REPL Mode
 
