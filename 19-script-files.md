@@ -45,23 +45,23 @@ Generally speaking:
 # Page Load Impact
 
 Here’s a closer look at how different attributes impact page load using the below legend :)
-![demo](./assets/1.png)
+![demo](./assets/1scripts.png)
 
 ## Defer
 
-![demo](./assets/4.png)
+![demo](./assets/4scripts.png)
 
 Loads the file in the background and runs JavaScript only when the DOM is ready, allowing you to retrieve HTML element objects in your script.
 
 ## Async
 
-![demo](./assets/3.png)
+![demo](./assets/3scripts.png)
 
 Loads the file in the background and runs JavaScript as soon as the file is loaded, potentially before the DOM is ready.
 
 ## The OG
 
-![demo](./assets/2.png)
+![demo](./assets/2scripts.png)
 
 Loads the file immediately, blocking the rest of the page until the script is executed, which may result in the DOM not being ready.
 
