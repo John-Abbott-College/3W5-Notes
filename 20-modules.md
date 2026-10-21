@@ -1,3 +1,5 @@
+https://images.pexels.com/photos/32557420/pexels-photo-32557420.jpeg
+
 # Quick Recap
 
 - What is Node.js? Node.js is a runtime environment that allows you to run JavaScript code on the server
