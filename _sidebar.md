@@ -34,3 +34,4 @@
 - [18-Node.js](18-node.md)
 - [19-script files](19-script-files.md)
 - [20-Modules](20-modules.md)
+- [21-IntersectionObserver](21-IntersectionObserver.md)
