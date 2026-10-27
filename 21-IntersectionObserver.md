@@ -307,9 +307,9 @@ Solution:
 
 - Download 3 images of your choice.
 
-- Create an HTML page with 3 image elements. Give your img elements a height and a width.
+- Create an HTML page with 3 image elements. Give your `img` elements a height and a width (500-800). Do not set an `alt` attribute.
 
-- Set the path to your 3 images in the img elements, but in a data- attribute, not in the src.
+- Set the path to your 3 images in the `img` elements, but in a `data-` attribute, not in the `src`.
 
 - When the user reaches the image, load it. 
 
