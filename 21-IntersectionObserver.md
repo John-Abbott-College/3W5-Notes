@@ -311,9 +311,7 @@ Solution:
 
 - Set the path to your 3 images in the img elements, but in a data- attribute, not in the src.
 
-- Next to each image put an element with some text indicating "you saw this one!", but set it as not visible.
-
-- When the user reaches the image, load it, show the text. 
+- When the user reaches the image, load it. 
 
 - Add a counter that counts how many images the user has seen and shows it at the top of the page. Update the count, when an image is seen.
 
