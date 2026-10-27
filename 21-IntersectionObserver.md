@@ -303,6 +303,22 @@ Solution:
 
 
 
+# Activity 1
+
+- Download 3 images of your choice.
+
+- Create an HTML page with 3 image elements. Give your img elements a height and a width.
+
+- Set the path to your 3 images in the img elements, but in a data- attribute, not in the src.
+
+- Next to each image put an element with some text indicating "you saw this one!", but set it as not visible.
+
+- When the user reaches the image, load it, show the text. 
+
+- Add a counter that counts how many images the user has seen and shows it at the top of the page. Update the count, when an image is seen.
+
+  
+
 ## How do I customize the intersection behaviour?
 
 Pass an option object when instantiating your `IntersectionObserver`.
@@ -315,9 +331,7 @@ const observer = new IntersectionObserver(callback, options);
 
 
 
-# Activity
+# Activity 2
 
-- Download a complete audio `.mp3` file from the internet.
-- Create an HTML page with some images and lower down, an audio element.
-- Store the location of the .mp3 in the data-src attribute of the audio element.
-- Using the `IntersectionObserver` set up your page to play the audio when the halfway mark of the audio-element is reached.
+- Take your lab above. Set a threshold of 50%.  What changed?
+- Put the threshold back to 0.  Change the rootMargin to 50px.  What changed?
