@@ -99,7 +99,7 @@ Cost--;
 
 You know when you go to access a [youtube](https://www.youtube.com/) and you sometimes get a bunch of grey boxes? This is because the content is being loaded lazily. The official name for these fun grey boxes is a _skeleton loader_ and it acts as a visual placeholder that mimics the layout of the content that is still being loaded lazily.
 
-![skeleton](C:\Users\helen.katalifos\OneDrive - John Abbott College\Documents\GitHubRepos\Web1Old\_archive\2024\web-programming-i\lectures\18-lazy-loading\assets\skeleton.gif)
+![skeleton](.\images\skeleton.gif)
 
 ## Practical example
 
