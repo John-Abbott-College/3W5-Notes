@@ -153,7 +153,7 @@ Step 2) You tell the observer which elements you want to monitor
 observer.observe(someElement);
 ```
 
-Step 3) The observer keeps track of the visibility of these elements. When observer `observe`s a chance in the element's intersection status, the function you define in `handleIntersect` will be called
+Step 3) The observer keeps track of the visibility of these elements. When observer `observe`s a change in the element's intersection status, the function you define in `handleIntersect` will be called
 
 ```js
 // An array will be passed into the function when the observer calls it
@@ -166,7 +166,40 @@ const handleIntersect = (entries) => {
 };
 ```
 
-The function will be called by the observer when any of the observed element’s intersection status changes.
+The function will be called by the observer when any of the observed elements’ intersection status changes.
+
+## Using data-* to store information on an HTML element
+
+In HTML, you can add any attribute starting with `data-` to your tag. You can name it whatever you like (e.g., `data-user-id`, `data-role`).
+
+```html
+<button id="myButton" data-user-id="254567" data-user-role="admin"  data-status="active">
+  View Profile
+</button>
+```
+
+In JavaScript, you can retrieve this data from the HTMLElement object:
+
+- on the `dataset` property
+- the `data-`  is dropped on the sub-property and any dashes are converted into CamelCase.
+
+For example: the HTML `data-user-id`, in JavaScript, is accessed on the element object as `myElement.dataset.userId`
+
+```javascript
+
+const button = document.getElementById('myButton');
+
+// Access the data from the dataset object property
+const userId = button.dataset.userId;     // Converts data-user-id to userId
+const userRole = button.dataset.userRole; // Converts data-user-role to userRole
+const status = button.dataset.status;     // Converts data-status to status
+
+console.log(userId);   // "254567"
+console.log(userRole); // "admin"
+console.log(status);   // "active"
+```
+
+
 
 ## Where do I store the real src of the image?
 
@@ -216,6 +249,58 @@ We only want to load the content when the user scrolls to it. Let's use the `Int
 </html>
 ```
 
+Solution:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div style="height: 100vh">Scroll down to the image.</div>
+
+    <img id="theImage" data-src="./public/moreCute.jpg" />
+
+    <script>
+      // Step 1: Wait for the DOM
+      document.addEventListener("DOMContentLoaded", function () {
+        // Step 2: Get the img element by its ID
+        const myImage = document.getElementById("theImage");
+
+        // Step 3: Get the data-src value: in JS, on the HTMLElement object, 
+        // it is in the property dataset, an object. It has a property src.
+        console.log( myImage.dataset.src );
+
+        // Step 4: Define the callback
+        const handleIntersect = (entries) => {
+          entries.forEach((entry) => {
+            // Step 5: Check if the img element is intersecting (visible in the viewport)
+            if (entry.isIntersecting) {
+              // Step 6: Set the src of the img from the data attribute
+				entry.target.src = entry.target.dataset.src
+            }
+          });
+        };
+
+        // Step 7: Create an Intersection Observer with the defined callback
+        const observer = new IntersectionObserver(handleIntersect);
+
+        // Step 8: Start observing the img element
+        observer.observe(myImage);
+      });
+    </script>
+  </body>
+</html>
+```
+
+
+
+***Note!***   Why should I not use `myImage` in the `handleIntersect` function?
+
+​	You must rely on the array your function is passed. What if you had many images observed?
+
 
 
 ## How do I customize the intersection behaviour?
@@ -230,9 +315,7 @@ const observer = new IntersectionObserver(callback, options);
 
 
 
-
-
-# The Activity
+# Activity
 
 - Download a complete audio `.mp3` file from the internet.
 - Create an HTML page with some images and lower down, an audio element.
