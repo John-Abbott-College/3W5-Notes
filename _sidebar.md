@@ -35,3 +35,6 @@
 - [19-script files](19-script-files.md)
 - [20-Modules](20-modules.md)
 - [21-IntersectionObserver](21-IntersectionObserver.md)
+
+**AJAX**
+- [22-APIs and AJAX](22-introduction-to-apis-and-ajax.md)
