@@ -1,6 +1,3 @@
-# Quick Recap
-
-Last week, we took time to familiarize ourselves with the syntax associated with the Intersection Observer API. Today we are going to get more into the theory
 
 # Asynchronous Programming
 
