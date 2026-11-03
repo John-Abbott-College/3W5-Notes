@@ -39,3 +39,4 @@
 
 **AJAX**
 - [22-APIs and AJAX](22-introduction-to-apis-and-ajax.md)
+- [23-Asynchronous programming and AJAX](23-asynchronous-javascript.md)
