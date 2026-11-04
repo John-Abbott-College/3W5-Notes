@@ -1,3 +1,17 @@
+# Debugging tips and reminders
+
+- Look for errors in the console. If there are errors, don’t just ignore the specifics and go back to your code trying to guess what went wrong. 
+  - Look at the error, read it carefully. What is it saying? Something is undefined? What is it saying is undefined? You are accessing something on something that is null? What is it saying is null?
+  - Look at the line the error is reported on. Look at the code on that line with the error description in mind.
+- Add breakpoints / console logging
+  - To add breakpoints: open the inspect tools, go to the Sources tab, open your .js file, click on the line number to add a breakpoint. Refresh the page so that your JS code is run again and your breakpoint is reached.
+- Take a close look:
+  - Is the variable defined in the enclosing scope?
+  - Am I accessing something on an object that does not have such a property/method? Did I just kind of guess the property/method without really inspecting the object?
+  - Is the object I am accessing what I think it is (array vs element object, etc)? Add a breakpoint and hover over it or console log it. Inspect your code. 
+  - Am I assuming an incorrect type?
+
+
 
 # Asynchronous Programming
 
@@ -268,9 +282,22 @@ request.onload = function () {
 request.send();
 ```
 
+As a reminder:
 
+- `open()` prepares a request to an API endpoint
+- `onload` processes the response if successful (and `onerror` handles failures)
+- `send()` sends the request
 
 # JSON <=> JavaScript object
+
+JSON - JavaScript Object Notation
+
+- a standard text-based format for representing structured data.
+- based on JavaScript object syntax, 
+  - but independent of JavaScript (could be used anywhere)
+- often used to transfer data from web server to browser (client).
+- is a string (great for transfer)
+- JavaScript provides a JSON object with methods to convert it to a JavaScript object.
 
 When you have a JSON string (from the xhr.response, after a request that responds with JSON, for example), use `JSON.parse` to convert it into a JavaScript object:
 
@@ -334,6 +361,36 @@ Go to the Dev link and figure out the URL you would use to give encyclopedia res
 
 </script>
 ```
+
+## Using fetch
+
+The fetch API is a modern alternative to `XMLHttpRequest` that simplifies the syntax for handling AJAX requests. It is "promise-based", making it more intuitive to work with asynchronous data:
+
+```js
+// Step 1 👉 Init a fetch request
+fetch("https://pokeapi.co/api/v2/pokemon/ditto")
+  // Step 2 👉 Handle the response once retrieved
+  .then((response) => {
+    // Step 3 👉 is the response NOT trash?
+    if (!response.ok) {
+      // Step 4 👉 error if trash
+      throw new Error("TRASHHHHHHHHH: " + response.statusText);
+    }
+    // Step 5 👉 parse JSON if not trash
+    return response.json();
+  })
+  // Step 6 👉 now handle JSON
+  .then((data) => console.log(data))
+  // Always good to add error handling
+  .catch((error) => console.error("Please observe the trash:", error));
+```
+
+With `fetch`, data handling is a bit more straightforward:
+
+- The `.then()` blocks handle success and parse the JSON response.
+- `.catch()` manages errors, making the code easier to follow and debug.
+
+We will cover the idea of `promises` more next class, for now, get comfy making API requests.
 
 
 
