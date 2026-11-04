@@ -249,7 +249,7 @@ xhttp.send(); // send request
 
 ## Example
 
-Let's explore the following using Quokka.js
+Let's explore the following:
 
 ```js
 let requestURL =
@@ -265,6 +265,20 @@ request.onload = function () {
 request.send();
 ```
 
+
+
+
+
+# JSON <=> JavaScript object
+
+When you have a JSON string, use `JSON.parse` to convert it into a JavaScript object:
+
+```javascript
+const myJSObject = JSON.parse( myJSONString );
+```
+
+
+
 # Exercise 1
 
 Using an XMLHttpRequest object, retrieve and display for the user: the most probable country id for any name the user of your webpage enters into a textbox. 
@@ -274,6 +288,37 @@ Create a textbox with a button (do not use a form here since we want to remain o
 When the user clicks the button, use the XHR to make an HTTPRequest to [https://api.nationalize.io](https://nationalize.io/). Look at the API documentation to see the GET parameters to send in the URL. 
 
 example: https://api.nationalize.io/?name=michael&apikey=d111c2870371b078487afe38fb9066c4
+
+
+
+# Exercise 2
+
+Using an XMLHttpRequest object, retrieve and display for the user:
+
+the topic and highlight from the 1st result received on https://www.edgechat.ai/mcp
+
+Go to the Dev link and figure out the URL you would use to give encyclopedia results to your user for anything they want to search.
+
+
+
+```html
+<!DOCTYPE html>
+
+<input type="text" id="theSearch"/>
+<button>Search</button>
+<h2 id="categoryLabel">The category of your item is:</h2>
+<h3 id="category"></h3>
+
+<h2 id="infoLabel">Information on your item:</h2>
+<h3 id="info"></h3>
+<script>
+
+    //your code here!
+
+</script>
+```
+
+
 
 # Async Operations Summary
 
