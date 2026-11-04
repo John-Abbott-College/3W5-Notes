@@ -254,30 +254,41 @@ Let's explore the following:
 ```js
 let requestURL =
   "https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json";
-let request = new XMLHttpRequest(); // Install using the command
+let request = new XMLHttpRequest(); // create the object
 
-request.open("GET", requestURL, true);
-request.responseType = "text";
-request.onload = function () {
-  var superHeroes = request.response;
-  console.log(superHeroes);
-};
+//set the URL to retrieve info from
+request.open("GET", requestURL, true); 
+
+//set the function that should be run when the response is received
+request.onload = function () { 
+      let superHeroes = request.response; //the JSON string from the response
+      console.log(superHeroes);
+    };
+
 request.send();
 ```
 
 
 
-
-
 # JSON <=> JavaScript object
 
-When you have a JSON string, use `JSON.parse` to convert it into a JavaScript object:
+When you have a JSON string (from the xhr.response, after a request that responds with JSON, for example), use `JSON.parse` to convert it into a JavaScript object:
 
 ```javascript
 const myJSObject = JSON.parse( myJSONString );
 ```
 
+You can also go from a JS object to a JSON string: 
 
+```javascript
+const myJSONString = JSON.stringify( myJSObject );
+```
+
+- JSON requires **double quotes** to be used **around property names and values that are strings**. Single quotes are not valid.
+
+- Even a single misplaced comma or colon can cause a JSON file to go wrong.
+
+  
 
 # Exercise 1
 
@@ -313,7 +324,13 @@ Go to the Dev link and figure out the URL you would use to give encyclopedia res
 <h3 id="info"></h3>
 <script>
 
-    //your code here!
+    "use strict";
+    document.addEventListener("DOMContentLoaded", ()=>
+    {
+        
+        //your code here!
+        
+    });
 
 </script>
 ```
