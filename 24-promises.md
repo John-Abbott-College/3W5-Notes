@@ -12,7 +12,7 @@ Promises let you decide what should happen when the result arrives before the re
 
 ## Why Promises?
 
-If we already have event listener callbacks, why promises tho?
+If we already have event listener callbacks, why promises?
 
 The key advantage is that promises allow for chaining operations in a more readable way. For example:
 
@@ -129,44 +129,13 @@ new Promise(function (resolve, reject) {
 
 Here's what the promise should do:
 
-- If the number is even, the promise should resolve with the message “yes.”
-- If the number is odd, the promise should reject without any message.
+- If the number is even, the promise should **resolve** with the message “yes.”
+- If the number is odd, the promise should **reject** without any message.
 
-When using this function, add a `.then` block to log the result to the console, and a `.catch` block to log “the number is odd” if the promise is rejected.
+No that you have your function that returns a promise, call it. 
+Call your function and use a `.then` block to log the result to the console, and a `.catch` block to log “the number is odd” if the promise is rejected.
 
 Finally, test your function by calling it with a few different numbers to see how it handles each case.
-
-## Solution
-
-```js
-function checkEvenOdd(number) {
-  return new Promise(function (resolve, reject) {
-    if (number % 2 === 0) {
-      resolve("yes");
-    } else {
-      reject();
-    }
-  });
-}
-
-// Test with even
-checkEvenOdd(4)
-  .then(function (result) {
-    console.log(result);
-  })
-  .catch(function () {
-    console.log("The number is odd");
-  });
-
-// Test with odd
-checkEvenOdd(3)
-  .then(function (result) {
-    console.log(result);
-  })
-  .catch(function () {
-    console.log("The number is odd");
-  });
-```
 
 # Overall, how do Promises work?
 
