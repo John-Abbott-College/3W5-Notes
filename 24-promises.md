@@ -132,7 +132,7 @@ Here's what the promise should do:
 - If the number is even, the promise should **resolve** with the message “yes.”
 - If the number is odd, the promise should **reject** without any message.
 
-No that you have your function that returns a promise, call it. 
+Now that you have your function that returns a promise, call it. 
 Call your function and use a `.then` block to log the result to the console, and a `.catch` block to log “the number is odd” if the promise is rejected.
 
 Finally, test your function by calling it with a few different numbers to see how it handles each case.
@@ -146,4 +146,40 @@ A promise is created using the Promise constructor and can be in one of three st
 - _Rejected_ 👉 The operation failed, and the promise has an error.
 
 ![emojis](./assets/emojis.png)
+
+
+
+# Exercise 2 - What happens when?
+
+```javascript
+
+console.log("1. Café opens");
+
+function orderFood(food, delay) {
+  return new Promise((resolve, reject) => {
+    console.log(`Preparing ${food}`);
+
+    setTimeout(() => {
+      if (food === "Ice cream") {
+        reject("Machine is broken!");
+      } else {
+        resolve(`${food} is ready!`);
+      }
+    }, delay);
+  });
+}
+
+orderFood("Pizza", 3000)
+  .then(result => console.log(result));
+
+orderFood("Burger", 1000)
+  .then(result => console.log(result));
+
+orderFood("Ice cream", 2000)
+  .then(result => console.log(result))
+  .catch(error => console.log(error));
+
+console.log("2. Café continues serving");
+
+```
 

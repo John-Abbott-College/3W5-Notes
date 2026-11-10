@@ -35,9 +35,11 @@
 - [18-Node.js](18-node.md)
 - [19-script files](19-script-files.md)
 - [20-Modules](20-modules.md)
-- [21-IntersectionObserver](21-IntersectionObserver.md)
 
 **Asynchronous programming and AJAX**
+
+- [21-IntersectionObserver](21-IntersectionObserver.md)
 - [22-APIs and AJAX](22-introduction-to-apis-and-ajax.md)
+- [22a-JSON<=>JS](22a-JSON.md)
 - [23-Asynchronous programming and AJAX](23-asynchronous-javascript.md)
 - [24-Promises](24-promises.md)
