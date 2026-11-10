@@ -280,6 +280,8 @@ request.onload = function () {
     };
 
 request.send();
+
+console.log( superheroes );
 ```
 
 As a reminder:
