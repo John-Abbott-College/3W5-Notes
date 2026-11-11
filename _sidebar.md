@@ -43,4 +43,4 @@
 - [22a-JSON<=>JS](22a-JSON.md)
 - [23-Asynchronous programming and AJAX](23-asynchronous-javascript.md)
 - [24-Promises](24-promises.md)
-- [24-More Promises, async await](25-morepromises-asyncawait.md)
+- [25-More Promises, async await](25-morepromises-asyncawait.md)
