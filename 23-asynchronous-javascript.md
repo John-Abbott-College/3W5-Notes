@@ -395,6 +395,28 @@ With `fetch`, data handling is a bit more straightforward:
 We will cover the idea of `promises` more next class, for now, get comfy making API requests.
 
 
+# Exercise 3
+
+Rewrite using the fetch API
+```js
+let requestURL =
+  "https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json";
+let request = new XMLHttpRequest(); // create the object
+
+//set the URL to retrieve info from
+request.open("GET", requestURL, true); 
+
+//set the function that should be run when the response is received
+request.onload = function () { 
+      let superHeroes = request.response; //the JSON string from the response
+      console.log(superHeroes);
+    };
+
+request.send();
+
+console.log( superheroes );
+```
+
 
 # Async Operations Summary
 
