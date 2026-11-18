@@ -245,58 +245,39 @@ You are a student that needs to submit an essay. Once this essay is created, it 
 
 Each task is asynchronous and takes `3000` milliseconds to complete.
 
-## Solution
 
-```js
-// Step 1: Create an Essay
-function writeEssay(essay) {
-  return new Promise((resolve, reject) => {
-    console.log("Creating essay...");
-    setTimeout(() => {
-      if (essay.content) {
-        resolve({ ...essay, id: 1, status: "created" });
-      } else {
-        reject("Failed to write essay lol");
-      }
-    }, 3000);
-  });
-}
 
-// Step 2: Review the Essay
-function reviewEssay(essay) {
-  return new Promise((resolve, reject) => {
-    console.log("Reviewing essay...");
-    setTimeout(() => {
-      if (essay.status === "created") {
-        resolve({ ...essay, status: "reviewed" });
-      } else {
-        reject("Didn't Review lol");
-      }
-    }, 3000);
-  });
-}
+# Promise.all
 
-// Step 3: Submit the essay
-function submitEssay(essay) {
-  return new Promise((resolve, reject) => {
-    console.log("Submitting Essay on Lea...");
-    setTimeout(() => {
-      if (essay.status === "reviewed") {
-        resolve({ ...essay, status: "submitted" });
-      } else {
-        reject("Cannot submit essay: Omnivox is down again lol");
-      }
-    }, 3000);
-  });
-}
+You can use the **all** function on the globally available Promise object to run promises concurrently. This allows you to specify what should happen only when they all resolve.
 
-// Chaining the functions
-writeEssay({ title: "Humanities Essay", content: "Wow this is an essay" })
-  .then((essay) => reviewEssay(essay))
-  .then((essay) => submitEssay(essay))
-  .then((essay) => console.log("Essay status:", essay.status)) // Should print "submitted"
-  .catch((error) => console.error(error));
+Pass in the array of promises.
+
+The then function will be run only when ALL the promises resolve.
+
+The **mega promise** will resolve with an array of what each promise was resolved with.
+
+```javascript
+Promise.all([promise1, promise2, promise3])//returns mega promise
+
+.then( function (arrayOfThingsThePromisesResolvedWith) { })
+
+.catch( function( error ) {});
 ```
+
+If one fails all the other promises also stop executing. 
+
+
+
+## Exercise
+
+Using the pokemon API and Promise.all, retrieve the info for the 3 pokemon: ditto, pikachu and squirtle and only when you get all their info display their combined weight. 
+
+reminder of the URL "https://pokeapi.co/api/v2/pokemon/ditto",
+
+Hint: use a function to return the promise you get from the last then on a fetch.
+
+
 
 # Async / Await
 
