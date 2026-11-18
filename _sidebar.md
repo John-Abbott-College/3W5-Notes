@@ -46,6 +46,7 @@
 - [24-Promises](24-promises.md)
 - [25-More Promises, async await](25-morepromises-asyncawait.md)
 
+**Test 2**
 - [Test 2a Info - Nov 27](Test2a_info.md)
 - [Test 2b Info - Dec 1](Test2b_info.md)
 - [Test 2 Syntax sheet]()
