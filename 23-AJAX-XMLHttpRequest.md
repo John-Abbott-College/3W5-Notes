@@ -1,11 +1,3 @@
-## How can the UI stay responsive while handling server requests, lazy loading images, and more?
-
-Thanks to the browser's event loop and asynchronous processing, background tasks run without blocking user interactions. This is also why JavaScript doesn’t always run in a predictable order :^)
-
-## What is AJAX?
-
-AJAX (Asynchronous JavaScript and XML) allows web pages to fetch server data and update content without reloading the page
-
 # Intro to APIs
 
 In today’s connected world, we rely on instant access to just about everything, whether it’s products, knowledge, or services. If I want any product, I can have it delivered to my doorstep within 24 hours thanks to Amazon. If I want to learn something about web development, chances are someone on Youtube has already posted a tutorial about it.
@@ -16,11 +8,11 @@ In a lot of ways, everything I want, I can get almost instantaneously.
 
 How does data get from here to there? How does it move across systems, from me to you, or from one device to another?
 
-![demo](./assets/1AJAX.png)
+![demo](C:/Users/helen.katalifos/OneDrive - John Abbott College/Documents/GitHubRepos/3W5-Notes/assets/1AJAX.png)
 
 The unseen force behind this seamless exchange is the Application Programming Interface, or API for short:
 
-![demo](./assets/2AJAX.png)
+![demo](C:/Users/helen.katalifos/OneDrive - John Abbott College/Documents/GitHubRepos/3W5-Notes/assets/2AJAX.png)
 
 # What is an API?
 
@@ -30,19 +22,19 @@ An API is like a messenger: it takes a request, tells a system what you want, an
 
 Think of an API like a waiter at a restaurant.
 
-![demo](./assets/3AJAX.png)
+![demo](C:/Users/helen.katalifos/OneDrive - John Abbott College/Documents/GitHubRepos/3W5-Notes/assets/3AJAX.png)
 
 Picture yourself at a restaurant with a menu of choices and a kitchen where orders are prepared.
 
-![demo](./assets/4AJAX.png)
+![demo](C:/Users/helen.katalifos/OneDrive - John Abbott College/Documents/GitHubRepos/3W5-Notes/assets/4AJAX.png)
 
 What’s missing? A link that communicates your order to the kitchen and brings the food back to your table. That’s where the waiter comes in.
 
-![demo](./assets/5AJAX.png)
+![demo](C:/Users/helen.katalifos/OneDrive - John Abbott College/Documents/GitHubRepos/3W5-Notes/assets/5AJAX.png)
 
 The waiter is the messenger that takes your order (request), tells the kitchen (system) what to prepare, and then brings the completed dish (response) back to you.
 
-![demo](./assets/6AJAX.png)
+![demo](C:/Users/helen.katalifos/OneDrive - John Abbott College/Documents/GitHubRepos/3W5-Notes/assets/6AJAX.png)
 
 ## Real World Example
 
@@ -64,50 +56,7 @@ https://pokeapi.co/api/v2/pokemon/ditto
 
 What is this response type anyways? Why is the default response `JSON`?
 
-# JSON Data
-
-## What is it?
-
-JSON (JavaScript Object Notation) is a lightweight format for representing structured data.
-
-## Why is the default response JSON?
-
-APIs return JSON data because it works really well with JavaScript, making it ideal for web applications.
-
-## Syntax
-
-It’s organized using key-value pairs and arrays much like the JavaScript object. However, JSON is language-independent despite looking REALLY similar to JavaScript object syntax:
-
-```JSON
-{
-    "abilities": [
-        {
-            "ability": {
-                "name": "limber",
-                "url": "https://pokeapi.co/api/v2/ability/7/"
-            },
-            "is_hidden": false,
-            "slot": 1
-        },
-        {
-            "ability": {
-                "name": "imposter",
-                "url": "https://pokeapi.co/api/v2/ability/150/"
-            },
-            "is_hidden": true,
-            "slot": 3
-        }
-    ]
-}
-```
-
-Conveniently, if I store this JSON data in a JavaScript variable called `ditto` (after parsing), I can access its properties like this:
-
-```js
-ditto.abilities.forEach((ability) => console.log(ability.ability.name));
-```
-
-Notice when you hover over any of the properties, VScode will tell you what exactly you are working with to make your life easier
+See the notes about JSON.
 
 # Exercise 1
 
@@ -121,15 +70,45 @@ The Pokémon API is a great example of an API that doesn’t require you to crea
 
 API keys are unique identifiers used to authenticate requests to an application programming interface (API). They function like a "password," allowing the server to identify who is making a request and whether they have permission to access specific data or features.
 
-# AJAX && APIs
+# AJAX
 
-Now that we've learned how to interact with APIs using Postman, let’s move on to handling API requests directly in JavaScript. While Postman makes debugging your requests easier, we want our requests to be handled async using JavaScript :^)
+## How can we make server requests?
+
+For the purposes of this class, we will be learning how to use AJAX to make requests to a server.
+
+## What is AJAX?
+
+AJAX (Asynchronous JavaScript and XML) allows web applications to send and retrieve data from a server asynchronously.
+
+## How does it work?
+
+![ajax](C:/Users/helen.katalifos/OneDrive - John Abbott College/Documents/GitHubRepos/3W5-Notes/assets/ajaxasync.gif)
+
+Why is this so neat? It allows parts of web pages to be asynchronously updated without reloading the whole page.
+
+## How do you make a server request with AJAX?
+
+The browser sends a request to the server via JavaScript, typically using the `XMLHttpRequest` object or using the more modern `fetch` API.
+
+When you make a request to the server, you are being "promised" by that server that it will get the data you desire.
+
+## How is that response consumed?
+
+Once you get that response, it is consumed as a "Promise" with the contents of that message containing the data that was "requested".
+
+## What happens to the Webpage?
+
+Once JavaScript has finished processing the response, it updates specific parts of the webpage dynamically.
+
+## Docs
+
+You can read more about it [here](https://www.w3schools.com/xml/ajax_intro.asp)
 
 ## AJAX requests
 
 AJAX requests allow us to interact with APIs to `fetch` or `send` data without requiring a full page refresh. This technique is commonly used in web applications and will likely be part of your future careers.
 
-## Using XMLHttpRequest
+## XMLHttpRequest
 
 `XMLHttpRequest` was the original way to send asynchronous requests from JavaScript. While it’s a bit more complex, it provides a solid understanding of how AJAX actually works:
 
@@ -176,38 +155,94 @@ Why am I logging the data inside the `onload`?
 
 - If you add a `console.log(data);` statement at the end of everything, it will run before the AJAX request completes, which is why it will print `undefined`. The console log is prioritized by the event loop, while API requests are treated as "micro" asynchronous tasks.
 
-## Using fetch
+# Using XMLHttpRequest
 
-The fetch API is a modern alternative to `XMLHttpRequest` that simplifies the syntax for handling AJAX requests. It is "promise-based", making it more intuitive to work with asynchronous data:
+All modern browsers have a built in XMLHttpRequest object:
 
 ```js
-// Step 1 👉 Init a fetch request
-fetch("https://pokeapi.co/api/v2/pokemon/ditto")
-  // Step 2 👉 Handle the response once retrieved
-  .then((response) => {
-    // Step 3 👉 is the response NOT trash?
-    if (!response.ok) {
-      // Step 4 👉 yeet error if trash
-      throw new Error("TRASHHHHHHHHH: " + response.statusText);
-    }
-    // Step 5 👉 parse JSON if not trash
-    return response.json();
-  })
-  // Step 6 👉 now handle JSON
-  .then((data) => console.log(data))
-  // Always good to add error handling
-  .catch((error) => console.error("Please observe the trash:", error));
+let xhttp = new XMLHttpRequest();
 ```
 
-With `fetch`, data handling is a bit more straightforward:
+## GET requests
 
-- The `.then()` blocks handle success and parse the JSON response.
-- `.catch()` manages errors, making the code easier to follow and debug.
+If I want to make a GET request to a server using this object, it would be as follows:
 
-We will cover the idea of `promises` more next week, for now I want you to get comfy making API requests.
+```js
+xhttp.open("GET", "<url>", true); // true ~ asynchronous
+xhttp.send(); // send request
+```
+
+## Example
+
+Let's explore the following:
+
+```js
+let requestURL =
+  "https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json";
+let request = new XMLHttpRequest(); // create the object
+
+//set the URL to retrieve info from
+request.open("GET", requestURL, true); 
+
+//set the function that should be run when the response is received
+request.onload = function () { 
+      let superHeroes = request.response; //the JSON string from the response
+      console.log(superHeroes);
+    };
+
+request.send();
+
+console.log( superheroes );
+```
+
+As a reminder:
+
+- `open()` prepares a request to an API endpoint
+- `onload` processes the response if successful (and `onerror` handles failures)
+- `send()` sends the request
+
+# Exercise 1
+
+Using an XMLHttpRequest object, retrieve and display for the user: the most probable country id for any name the user of your webpage enters into a textbox. 
+
+Create a textbox with a button (do not use a form here since we want to remain on the page and update it with information).
+
+When the user clicks the button, use the XHR to make an HTTPRequest to [https://api.nationalize.io](https://nationalize.io/). Look at the API documentation to see the GET parameters to send in the URL. 
+
+example: https://api.nationalize.io/?name=michael&apikey=d111c2870371b078487afe38fb9066c4
+
+
 
 # Exercise 2
 
-Get into groups of up to 2 people, if you prefer to work independently, that's ok too. For this exercise, use the Pokémon API to `fetch` information about your favourite Pokémon.
+Using an XMLHttpRequest object, retrieve and display for the user:
 
-Using your knowledge of dynamically adding elements to a webpage, ensure that the Pokémon's stats are displayed as soon as the page loads. 
+the topic and highlight from the 1st result received on https://www.edgechat.ai/mcp
+
+Go to the Dev link and figure out the URL you would use to give encyclopedia results to your user for anything they want to search.
+
+
+
+```html
+<!DOCTYPE html>
+
+<input type="text" id="theSearch"/>
+<button>Search</button>
+<h2 id="categoryLabel">The category of your item is:</h2>
+<h3 id="category"></h3>
+
+<h2 id="infoLabel">Information on your item:</h2>
+<h3 id="info"></h3>
+<script>
+
+    "use strict";
+    document.addEventListener("DOMContentLoaded", ()=>
+    {
+        
+        //your code here!
+        
+    });
+
+</script>
+```
+
