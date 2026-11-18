@@ -39,8 +39,13 @@
 **Asynchronous programming and AJAX**
 
 - [21-IntersectionObserver](21-IntersectionObserver.md)
-- [22-APIs and AJAX](22-introduction-to-apis-and-ajax.md)
-- [22a-JSON<=>JS](22a-JSON.md)
-- [23-Asynchronous programming and AJAX](23-asynchronous-javascript.md)
+- [22-Asynchronous-JavaScript](23-asynchronous-javascript.md)
+- [23-AJAX XMLHttpRequest](23-AJAX-XMLHttpRequest.md)
+- [23a-JSON<=>JS](23a-JSON.md)
+- [23b-fetch](23b-fetch.md)
 - [24-Promises](24-promises.md)
 - [25-More Promises, async await](25-morepromises-asyncawait.md)
+
+- [Test 2a Info - Nov 27](Test2a_info.md)
+- [Test 2b Info - Dec 1](Test2b_info.md)
+- [Test 2 Syntax sheet]()
