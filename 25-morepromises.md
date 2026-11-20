@@ -290,14 +290,16 @@ Make sure you are clear on what is run when.
 
 	return new Promise( function(resolve, reject){
         alert("B");
-	 	setTimeout( ()=>{ alert("C")}, 0)
+	 	setTimeout( ()=>{ alert("C");
+                          resolve()}, 0)
         alert("D");
 	 } );
   }
 
   alert("E");
 
-  foo().then(()=>alert("F"));
+  foo()
+  .then(()=>alert("F"));
 
   alert("G");
 ```
