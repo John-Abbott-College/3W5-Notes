@@ -279,72 +279,26 @@ Hint: use a function to return the promise you get from the last then on a fetch
 
 
 
-# Async / Await
+### Exercise 2
 
-Alright, so we know that `Promises` made handling asynchronous code a lot easier than the old "callback hell" approach. But when you start chaining too many promises, the code can still get messy and hard on our retinas
+Make sure you are clear on what is run when.
 
-## Where does Async Await come in?
+```javascript
+  function foo()
+  {   
+   	alert("A");
 
-`async` and `await` make your code look cuter and easier to follow by letting you write asynchronous code in a more natural way, almost like regular synchronous code (but not quite)
-
-- `async` 👉 A keyword used to declare a function that will handle asynchronous actions
-- `await` 👉 A keyword used to pause the function until a promise is `resolve`d or `reject`ed
-
-Let’s rewrite our earlier example with `async` and `await` so you can see the difference.
-
-## Rewriting our example
-
-The synchronous helper functions stay the same, but the `teacherMustGrade` function now becomes an `async` function:
-
-```js
-// Declare the function with "async"
-async function teacherMustGrade(assignment) {
-  const deadline = new Date("2026-11-13");
-
-  // TODO - Simulate a wait period of 3 seconds instead of 3 days
-
-  const today = new Date();
-  if (today <= deadline) {
-    return { grade: 0.8, comments: ["blah", "blah"] };
-  } else {
-    throw new Error(
-      `Teacher slept through their deadline and failed to grade your ${assignment.name}`
-    );
+	return new Promise( function(resolve, reject){
+        alert("B");
+	 	setTimeout( ()=>{ alert("C")}, 0)
+        alert("D");
+	 } );
   }
-}
+
+  alert("E");
+
+  foo().then(()=>alert("F"));
+
+  alert("G");
 ```
-
-The `teacherMustGrade` function is marked as `async`, meaning we’ll need to `await` its result when we call it, like this:
-
-```js
-try {
-  // "await" the response
-  const feedback = await teacherMustGrade({
-    name: "Assignment 3",
-    content: "some really cool code",
-  });
-  // synchronous code can now be executed
-  const response = checkGrade(feedback);
-  sendTeacherDM(response);
-} catch (error) {
-  console.log(error.message);
-}
-```
-
-With `try` and `catch`, error handling is now much more sleek since you can wrap everything in one simple block.
-
-## Can we have awaits inside of async functions?
-
-Yeees 👉 If we need to simulate a delay inside `teacherMustGrade`, we can use `await` as follows:
-
-```js
-// Simulate a wait period of 3 seconds instead of 3 days
-await new Promise((resolve) => setTimeout(resolve, 3000));
-```
-
-💡 Note: Once you have an `await` in a function, the function itself must be marked `async`.
-
-# Exercise 2
-
-Take your Exercise 1 and transform it to work with `async` and `await`
 
