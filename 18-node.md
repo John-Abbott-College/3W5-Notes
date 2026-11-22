@@ -187,3 +187,34 @@ At the top of your file, where you want to use the package you just brought in, 
 ```js
 const packageName = require("package-name");
 ```
+
+## Use Node.js to create a simple HTTP server
+
+Using some Node.js libraries, we can create a simple webserver that receives HTTP requests at port 8080 on the localhost:
+
+```js
+const http = require('http');
+const fs = require('fs');
+
+http.createServer(function (req, res) {
+  fs.readFile('index.html', function(err, data) {
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    res.write(data);
+    return res.end();
+  });
+}).listen(8080);
+```
+
+The code reads the index.html file and sends it as the body in response to the HTTP Request.
+
+The HTML file sent to the browser can contain some front-end JavaScript code that will be run in the browser when it runs through the file, When it goes through the page,  building the DOM it will run any encountered JavaScript in the file sent by the Node.js web server.
+
+# JavaScript code for two different purposes 
+
+JavaScript code in the Node.js files that is run by the Node.js JavaScript runner do server things:
+send HTML(as well as CSS and JavaScript) pages in response to HTTPRequests, write to the database, etc
+
+JavaScript in the HTML, or linked to from the HTML is run by the browser JavaScript runner to do client things:
+update the DOM, react to user action, etc
+
+
