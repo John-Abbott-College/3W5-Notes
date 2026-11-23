@@ -122,7 +122,7 @@
         - We had stored the image location in the data-src attribute (accessible in JavaScript on the element object via the element.dataset.src property).
         - The img elements are in the target property of the IntersectionObserverEntry objects we receive in an array in the function.
 
-  - You can call the unobserve function on the observer o unobserve an element (tell the observer to no longer track it).
+  - You can call the unobserve function on the observer to unobserve an element (tell the observer to no longer track it).
 
     
 
