@@ -27,7 +27,7 @@
 
 ========end of material for test 1 ==========
 - [Test 1 Info](Test1_info.md)
-- [Test 1 Syntax sheet](https://johnabbott-my.sharepoint.com/:b:/g/personal/helen_katalifos_johnabbott_qc_ca/IQDt8wn4R3tdSKisJodnrz2wAY2N4sUMALY8ugt95iAebto?e=4mLaky)
+- [Test 1 Syntax sheet](https://johnabbott-my.sharepoint.com/:b:/g/personal/helen_katalifos_johnabbott_qc_ca/IQDt8wn4R3tdSKisJodnrz2wAZVYNgCY1hytiLUfwJjOrkY?e=bnIDDi)
 
 ========start of new material ==========
 
@@ -49,7 +49,7 @@
 **Test 2**
 - [Test 2a Info - Nov 27](Test2a_info.md)
 - [Test 2b Info - Dec 1](Test2b_info.md)
-- [Test 2 Syntax sheet]()
+- [Test 2 Syntax sheet](https://docs.google.com/document/d/1iYrvNDf0fLHZCTFSG6-YdkOAzPfMHAYpOimcWh_I1yo/edit?usp=sharing)
 
 
 ========= not on  test 2 ==================
