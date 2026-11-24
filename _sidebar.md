@@ -45,8 +45,10 @@
 - [23b-fetch](23b-fetch.md)
 - [24-Promises](24-promises.md)
 - [25-More Promises, Promise.all](25-morepromises.md)
+- [25a-setTimeout](25a-setTimeout.md)
 
 **Test 2**
+
 - [Test 2a Info - Nov 27](Test2a_info.md)
 - [Test 2b Info - Dec 1](Test2b_info.md)
 - [Test 2 Syntax sheet](https://docs.google.com/document/d/1iYrvNDf0fLHZCTFSG6-YdkOAzPfMHAYpOimcWh_I1yo/edit?usp=sharing)
