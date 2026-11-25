@@ -308,11 +308,18 @@ Make sure you are clear on what is run when.
 
 ### Solution to Exercise 2
 
-Alerts in order seen:
+Alerts in the order seen:
+
 E
+
 A
+
 B //because function given to the Promise constructor is run synchronously
+
 D // because setTimeout returns right away and the JS runner must finish running the function given to the constructor
+
 G // because the .then sets up what should happen when the promise resolves but then returns right away
+
 C // the JS runner is finally free, it can run the function setTimeout added to the queue
+
 F // the promise resolved so the function passed to then is added to the queue and since the JS runner is free, it is run
