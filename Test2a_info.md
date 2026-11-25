@@ -3,7 +3,15 @@
 > Assumption: you are able to apply the already covered JavaScript basics (events, DOM manipulation, scope of let/var/const, script tags and defer, arrow notation, etc)
 >
 
-* #### Script tags (do not need to know what async does)
+* #### array.map() function, used in assignment 3
+  - let newArray = myArray.map( function(x) { return x + 2; } );
+  - returns a new array of the same size as the original array
+  - Given a function to apply to each element of the original array.
+  - What that function returns, is what will appear in the new array for that element.
+  - If it returns nothing, new array will be an array of undefined values, one for each element in the original array
+  - (Doesn’t change the original array unless changes objects that are passed by (copy of) reference.)
+  
+*  #### Script tags (do not need to know what async does)
 
   - with a src attribute set, run when encountered unless defer is used
     - defer:
